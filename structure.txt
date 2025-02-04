@@ -1,0 +1,39 @@
+	<ul class="article-feed">
+      <li class="article-feed__item">
+        <div class="article-card is-expanded">
+          <div class="article-card__head">
+            <h2 class="article-card__title">
+              ${post.title}
+            </h2>
+            <a href="${post.artefact_url}" class="article-card__source-link"><!-- no source for source name // available? --></a>
+            <div class="article-card__pub-date"><!-- no source for pub date. Wanted? Available? --></div>
+          </div>
+          <div class="article-card__main">
+            <div class="article-card__summary">
+              <p>${post.relevance_summary}</p>
+            </div>
+            <div class="article-card_quote">
+              <p>${post.key_quote}</p>
+            </div>
+          </div>
+          <div class="article-card__footer">
+            <div class="article-card__company">
+              <h3 class="article-card__subhead">Related companies</h3>
+              <ul class="chip-list">
+                <li class="chip is-company">
+                  ${post.company_name}
+                </li>
+              </ul>
+            </div>
+            <div class="article-card__role">
+              <h3 class="article-card__subhead">Related roles</h3>
+              <ul class="chip-list">
+                <li class="chip is-role">
+                  ${post.role_title}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
