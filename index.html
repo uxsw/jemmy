@@ -1,27 +1,355 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insurance Reports</title>
-    <style>
-        .report {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ddd;
+<!doctype html>
+<html dir="ltr" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Jemmy</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+        <link href="scss/styles.css" title="site-styles" rel="stylesheet">
+ 
+    
+        <meta name="viewport" content="initial-scale=1">
+        
+        <!-- open graph common -->
+        <meta property="og:site_name" content="Jemmy | Enabling dialogues that connect">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content=" INSERT "> 
+
+        <style type="text/css">
+
+        :root {
+          --canon: clamp(3.125rem, 2.2223rem + 4.5135vw, 7.3rem);
+          --paragon: clamp(2rem, -0.0893rem + 9.2857vw, 6.875rem);
+          --pica: clamp(1.6rem, 1rem + 2.6667vw, 3rem);
+          --long-primer: clamp(1.2rem, 1.1429rem + 0.4762vw, 1.3rem);
+          --primer: 1rem;
+          --brevier: 0.95rem;
+          --minion: 0.85rem;
+
+          --color-slate: hsl(200, 100%, 5%);
+          --color-slate-10: hsl(200, 100%, 15%);
+          --color-slate-20: hsl(200, 100%, 20%);
+          --color-slate-30: hsl(200, 100%, 35%);
+          --color-slate-40: hsl(200, 100%, 45%);
+          --color-slate-50: hsl(200, 100%, 55%);
+          --color-slate-60: hsl(200, 100%, 65%);
+          --color-slate-70: hsl(200, 100%, 75%);
+          --color-slate-80: hsl(200, 100%, 85%);
+          --color-slate-90: hsl(200, 100%, 95%);
+
+          --color-slated: hsl(200, 50%, 5%);
+          --color-slated-10: hsl(200, 50%, 10%);
+          --color-slated-20: hsl(200, 50%, 15%);
+          --color-slated-30: hsl(200, 50%, 35%);
+          --color-slated-40: hsl(200, 50%, 45%);
+          --color-slated-50: hsl(200, 50%, 55%);
+          --color-slated-60: hsl(200, 50%, 65%);
+          --color-slated-70: hsl(200, 50%, 75%);
+          --color-slated-80: hsl(200, 50%, 85%);
+          --color-slated-90: hsl(200, 50%, 95%);
+
+          --color-gold: hsl(43, 100%, 50%);
+          --color-gold-darker: hsl(43, 100%, 40%);
+          --color-gold-darkest: hsl(43, 100%, 10%);
         }
-        .title {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-        .company, .person-name, .role-title, .relevance-summary, .key-quotes {
-            margin: 5px 0;
-        }
-    </style>
-</head>
-<body>
-    <h1>Insurance Reports</h1>
-    <ul class="news-feed" id="article-feed"></ul>
+
+        
+        </style>
+    </head>
+    <body>
+        <header class="c-site-header">
+			<a href="/">
+                <img src="assets/img/jemmy-logo.svg" alt="Jemmy" height="44" class="c-site-header__logo" />
+            </a>
+            <div class="c-site-header__tag">Dialogs that connect</div>
+		</header>
+        <div class="c-page-media">
+            <img src="assets/img/head-img-ideas.webp" alt="" />
+        </div>
+        <div class="companies-list">
+            <div class="companies-list__menu">
+                <a href="#admiral" class="is-item">Admiral</a>
+                <a href="#allianz" class="is-item">Allianz SE</a>
+                <a href="#aon" class="is-item">Aon plc</a>
+                <a href="#aviva" class="is-item">Aviva</a>
+            </div>
+            <!--Admiral-->
+            <div class="companies-list__company" id="admiral">
+                <h2 class="is-name">Admiral</h2>
+                <ul class="roles-list">
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(1)">
+
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">Milena Mondini de Focatiis</h3>
+                                <p class="is-role">Group CEO, Admiral</p>
+                            </div>
+                            <div class="is-article-count">
+                                <span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(2)">
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">Alistair Hargreaves</h3>
+                                <p class="is-role">CEO UK insurance, Admiral</p>
+                            </div>
+                            <div class="is-article-count"><span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(3)">
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">Scott Cargill</h3>
+                                <p class="is-role">CEO Admiral Money, Admiral</p>
+                            </div>
+                            <div class="is-article-count"><span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(4)">
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">Emma Huntington</h3>
+                                <p class="is-role">CEO Admiral Pioneer, Admiral</p>
+                            </div>
+                            <div class="is-article-count"><span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--Allianz-->
+            <div class="companies-list__company" id="allianz">
+                <h2 class="is-name">Allianz SE</h2>
+                <ul class="roles-list">
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(5)">
+
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">Dr. Barbara Karuth-Zelle</h3>
+                                <p class="is-role">Operations, IT and Organization (COO) , Allianz SE</p>
+                            </div>
+                            <div class="is-article-count"><span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(6)">
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">Nick Hobbs</h3>
+                                <p class="is-role">Managing Director - Commercial, Allianz Holdings</p>
+                            </div>
+                            <div class="is-article-count"><span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(7)">
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">Ida Luka-Lognoné</h3>
+                                <p class="is-role">Chief Officer Health, Allianz Partners</p>
+                            </div>
+                            <div class="is-article-count"><span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(8)">
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">Neil Brown</h3>
+                                <p class="is-role">Head of UK Distribution, Allianz GI</p>
+                            </div>
+                            <div class="is-article-count"><span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--Aon-->
+            <div class="companies-list__company" id="aon">
+                <h2 class="is-name">Aon plc</h2>
+                <ul class="roles-list">
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(9)">
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">Jane Kielty</h3>
+                                <p class="is-role">CEO, Aon UK Limited</p>
+                            </div>
+                            <div class="is-article-count"><span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(10)">
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">Andy Marcell</h3>
+                                <p class="is-role">CEO - Risk Capital, Aon plc</p>
+                            </div>
+                            <div class="is-article-count"><span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(11)">
+
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">Greg Case</h3>
+                                <p class="is-role">CEO, Aon plc</p>
+                            </div>
+                            <div class="is-article-count"><span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                   
+                    
+                   
+                </ul>
+            </div>
+            <!--Aviva-->
+            <div class="companies-list__company" id="aviva">
+                <h2 class="is-name">Aviva</h2>
+                <ul class="roles-list">
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(12)">
+
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">Doug Brown</h3>
+                                <p class="is-role">CEO of Insurance, Wealth & Retirement, Aviva</p>
+                            </div>
+                            <div class="is-article-count"><span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(14)">
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">John Cummings</h3>
+                                <p class="is-role">Chief Information Officer, Aviva</p>
+                            </div>
+                            <div class="is-article-count"><span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(13)">
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">Jason Storah</h3>
+                                <p class="is-role">CEO of UK & Ireland General Insurance, Aviva</p>
+                            </div>
+                            <div class="is-article-count"><span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="roles-list__role" onclick="showModal(15)">
+                            <div class="is-leading-icon material-icons">
+                                account_box
+                            </div>
+                            <div class="is-name-role">
+                                <h3 class="is-name">Mark Versey</h3>
+                                <p class="is-role">CEO of Aviva Investors, Aviva</p>
+                            </div>
+                            <div class="is-article-count"><span class="material-icons">
+                                arrow_forward
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-footer">
+            <img src="assets/img/jemmy-logo.svg" height="32" alt="Jemmy" class="is-logo" />
+            &copy; MMXXV
+        </div>
+
+    <div id="modal" class="modal">
+        <div class="modal__content">
+            <div class="modal__head">
+                <div class="is-close" onclick="closeModal()">
+                    <span class="material-icons">close</span>Close</div>
+                </div>
+            <div id="jemmyFeed" class="c-article-feed"></div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
