@@ -1,116 +1,122 @@
-// Function to fetch data from the JSON file and display it
-function fetchReports() {
-    fetch('data.json')  // Adjust the path if needed
-        .then(response => {
-            // Check if the response is valid
-            if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
-            }
-            return response.json();  // Parse the JSON from the response
-        })
-        .then(data => {
-            displayReports(data);  // Call displayReports to render the data
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        });
-}
-
-// Function to render the fetched data into the HTML
-function displayReports(data) {
-    const container = document.getElementById('article-feed');  // Container to hold the reports
-    
-    // Check if the data is an array and not empty
-    if (Array.isArray(data) && data.length > 0) {
-        data.forEach(report => {
-            const reportDiv = document.createElement('li');
-            reportDiv.classList.add('article-card');
-
-            // Create a container for card header
-            const articleCardHeader = document.createElement('div');
-            articleCardHeader.classList.add('article-card__head');
-
-            // Create container for card main
-            const articleCardMain = document.createElement('div');
-            articleCardMain.classList.add('article-card__main');
-
-            // Elements in main for summary && quote
-
-            const articleCardSummary = document.createElement('div');
-            articleCardSummary.classList.add('article-card__summary');
-
-            const articleCardQuote = document.createElement('div');
-            articleCardQuote.classList.add('article-card__quote');
-
-
-            // Create container for card footer
-            const articleCardFooter = document.createElement('div');
-            articleCardFooter.classList.add('article-card__footer');
-
-            // Add title with link
-            const title = document.createElement('h2');
-            title.classList.add('article-card__title');
-            const link = document.createElement('a');
-            link.href = report.artefact_url;
-            link.target = '_blank';
-            link.textContent = report.title;
-            title.appendChild(link);
-
-            // Add company name
-            const company = document.createElement('p');
-            company.classList.add('company');
-            company.textContent = `Company: ${report.company_name}`;
-
-            // Insert title and company to the Card Article Header
-            articleCardHeader.appendChild(title);
-            articleCardHeader.appendChild(company);
-
-            // Add summary
-            const relevanceSummary = document.createElement('p');
-            relevanceSummary.classList.add('relevance-summary');
-            relevanceSummary.textContent = `Relevance Summary: ${report.relevance_summary}`;
-
-            const keyQuotes = document.createElement('p');
-            keyQuotes.classList.add('key-quotes');
-            keyQuotes.textContent = `Key Quotes: ${report.key_quotes}`;
-
-            // Insert article summary to Card Article Main
-            articleCardSummary.appendChild(relevanceSummary);
-            articleCardQuote.appendChild(keyQuotes);
-
-            // Create and append other details like person, role, summary, and key quotes
-            const personName = document.createElement('p');
-            personName.classList.add('person-name');
-            personName.textContent = `Person: ${report.person_name}`;
-
-            const roleTitle = document.createElement('p');
-            roleTitle.classList.add('role-title');
-            roleTitle.textContent = `Role: ${report.role_title}`;
-
-            //Insert footer content
-            articleCardFooter.appendChild(personName);
-            articleCardFooter.appendChild(roleTitle);
-
-           
-
-            // Append the title-company container and other details to the report div
-            reportDiv.appendChild(articleCardHeader);
-            reportDiv.appendChild(articleCardMain);
-            reportDiv.appendChild(articleCardFooter);
-
-            articleCardMain.appendChild(articleCardSummary);
-            articleCardMain.appendChild(articleCardQuote);
-            //reportDiv.appendChild(personName);
-            //reportDiv.appendChild(roleTitle);
-            //reportDiv.appendChild(relevanceSummary);
-            //reportDiv.appendChild(keyQuotes);
-
-            container.appendChild(reportDiv);
-        });
-    } else {
-        container.innerHTML = '<p>No reports available.</p>';
+async function fetchData() {
+    try {
+        const response = await fetch('data.json'); // Load JSON from external file
+        return await response.json();
+    } catch (error) {
+        console.error("Error loading JSON:", error);
     }
 }
 
-// Call fetchReports to load data when the page is loaded
-document.addEventListener('DOMContentLoaded', fetchReports);
+async function showModal(personId) {
+    const data = await fetchData();
+    if (!data) return;
+
+    const filteredResults = data.filter(item => item.person_id === personId);
+    
+    if (filteredResults.length === 0) {
+        document.getElementById('jemmyFeed').innerHTML = `<p>No results found.</p>`;
+    } else {
+        const person = filteredResults[0];
+        const personName = person.person_name || "Unknown";
+        const roleName = person.role_title || "Unknown";
+
+        // Display person_name and company_name at the top
+        const personInfoHTML = `
+            <div class="person-info">
+                <span class="is-leading-icon material-icons">account_box</span>
+                <div class="is-labels">
+                    <p class="is-name">${personName}</p>
+                    <p class="is-role">${roleName}</p>
+                </div>
+            </div>
+        `;
+
+        // Insert this info above the results
+        let html = personInfoHTML + filteredResults.map(item => {
+            const quotesArray = JSON.parse(item.key_quotes.replace(/'/g, '"'));
+            const quotesList = quotesArray.map(quote => `<li>${quote}</li>`).join('');
+
+            return `
+            <div class="article-card">
+                <div class="article-card__head">
+                    <h2 class="article-card__title">${item.title}</h2>
+                </div>
+                <div class="article-card__main">
+                    <div class="article-card__summary">
+                        <p class="relevance-summary">${item.relevance_summary}</p>
+                    </div>
+                    <div class="article-card__angle">
+                        <h4 class="angle-title">
+                            <span class="material-icons is-icon">tips_and_updates</span>
+                            Suggested angle
+                        </h4>
+                        <p>${item.snowflake_angle}</p>
+                    </div>    
+                    <div class="article-card__cta">
+                        <a href="${item.artefact_url}" target="_blank" class="is-button">
+                            View source
+                            <span class="material-icons">launch</span>
+                        </a>
+                        <a href="javascript:void(0);" class="copy-to-clipboard">
+                            <span class="material-icons is-icon">file_copy</span>
+                            Copy to clipboard
+                        </a>
+                    </div>
+                    <div class="article-card__quote">
+                        <h4 class="quote-title">
+                            <span class="material-icons is-icon">chat</span>
+                            Key quotes
+                        </h4>
+                        <ul class="key-quotes">${quotesList}</ul>
+                    </div>
+                </div>
+                <div class="article-card__footer">
+                    <div class="rate-article">
+                        <h4 class="is-legend">Rate this article</h4>
+                        <div class="rate-article__buttons">
+                            <a href="javascript:void(0);" class="is-thumb is-thumb-up">
+                                <span class="is-label">Thumbs up</span>
+                            </a>
+                            <a href="javascript:void(0);" class="is-thumb is-thumb-down">
+                                <span class="is-label">Thumbs down</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="share-article">
+                        <a href="javascript:void(0);" class="is-email is-item">
+                            <span class="material-icons is-icon">email</span>
+                        </a>
+                        <a href="javascript:void(0);" class="is-linkedin is-item">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="is-icon">
+                            <path d="M22 3.47059V20.5294C22 20.9194 21.8451 21.2935 21.5693 21.5693C21.2935 21.8451 20.9194 22 20.5294 22H3.47059C3.08056 22 2.70651 21.8451 2.43073 21.5693C2.15494 21.2935 2 20.9194 2 20.5294V3.47059C2 3.08056 2.15494 2.70651 2.43073 2.43073C2.70651 2.15494 3.08056 2 3.47059 2H20.5294C20.9194 2 21.2935 2.15494 21.5693 2.43073C21.8451 2.70651 22 3.08056 22 3.47059ZM7.88235 9.64706H4.94118V19.0588H7.88235V9.64706ZM8.14706 6.41177C8.14861 6.18929 8.10632 5.96869 8.02261 5.76255C7.93891 5.55642 7.81542 5.36879 7.65919 5.21039C7.50297 5.05198 7.31708 4.92589 7.11213 4.83933C6.90718 4.75277 6.68718 4.70742 6.46471 4.70588H6.41177C5.95934 4.70588 5.52544 4.88561 5.20552 5.20552C4.88561 5.52544 4.70588 5.95934 4.70588 6.41177C4.70588 6.86419 4.88561 7.29809 5.20552 7.61801C5.52544 7.93792 5.95934 8.11765 6.41177 8.11765C6.63426 8.12312 6.85565 8.0847 7.06328 8.00458C7.27092 7.92447 7.46074 7.80422 7.62189 7.65072C7.78304 7.49722 7.91237 7.31346 8.00248 7.10996C8.09259 6.90646 8.14172 6.6872 8.14706 6.46471V6.41177ZM19.0588 13.3412C19.0588 10.5118 17.2588 9.41177 15.4706 9.41177C14.8851 9.38245 14.3021 9.50715 13.7799 9.77345C13.2576 10.0397 12.8143 10.4383 12.4941 10.9294H12.4118V9.64706H9.64706V19.0588H12.5882V14.0529C12.5457 13.5403 12.7072 13.0315 13.0376 12.6372C13.3681 12.2429 13.8407 11.9949 14.3529 11.9471H14.4647C15.4 11.9471 16.0941 12.5353 16.0941 14.0176V19.0588H19.0353L19.0588 13.3412Z" fill="var(--color-slate-80)"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0);" class="is-twitter is-item">
+                            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                            <svg width="24px" height="24px" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="is-icon"><defs></defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)" fill="var(--color-slate-80">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705" id="twitter-[#154]"></path>
+                                    </g>
+                                </g>
+                            </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            `;
+        }).join('');
+
+        document.getElementById('jemmyFeed').innerHTML = html;
+    }
+
+    document.getElementById('modal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+}
