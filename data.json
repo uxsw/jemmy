@@ -1,192 +1,382 @@
 [
-    {
-        "title": "Global Insurance Report 2025: The pursuit of growth",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/global-insurance-report",
-        "company_name": "Allianz",
-        "relevance_score": 75.0,
-        "person_name": "Dr. Klaus-Peter Röhler",
-        "role_title": "Insurance German Speaking Countries",
-        "relevance_summary": "Dr. Röhler focuses on improving customer churn, cross-selling, and acquiring new customers, and the report discusses opportunities for insurers to innovate and expand coverage amidst challenges, which aligns directly with his interests.",
-        "key_quotes": "The report identifies opportunities for capturing profitable growth as they navigate this shifting landscape. Amid these challenges, we see a chance for carriers to innovate, expand coverage, and increase the industry’s relevance."
-    },
-    {
-        "title": "Context is key: Tanguy Catlin on advancing the future of insurance",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/context-is-key-tanguy-catlin-on-advancing-the-future-of-insurance",
-        "company_name": "Allianz",
-        "relevance_score": 85.0,
-        "person_name": "Dr. Barbara Karuth-Zelle",
-        "role_title": "COO",
-        "relevance_summary": "The discussion on generative AI and its potential applications across the insurance industry aligns with Dr. Karuth-Zelle's interests in IT and innovation within insurance operations.",
-        "key_quotes": "‘Gen AI changes the way you engage with your data... It’s about engagement and dialogue.’"
-    },
-    {
-        "title": "Context is key: Tanguy Catlin on advancing the future of insurance",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/context-is-key-tanguy-catlin-on-advancing-the-future-of-insurance",
-        "company_name": "Admiral",
-        "relevance_score": 75.0,
-        "person_name": "Mike Rogers",
-        "role_title": "Chairman",
-        "relevance_summary": "The article discusses the importance of generative AI in the insurance industry, which aligns with Mike's interest in evolving the motor insurance proposition and understanding new consumer service technologies.",
-        "key_quotes": "The big topic this year is gen AI. Many of the insurtech companies here provide insurance carriers with gen AI to transform aspects of customer care in sales, claims, or underwriting. Gen AI changes the way you engage with your data."
-    },
-    {
-        "title": "Scaling a niche start up into a necessary one: Insights from Arbol",
-        "artefact_url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/scaling-a-niche-start-up-into-a-necessary-one-insights-from-arbol",
-        "company_name": "Allianz",
-        "relevance_score": 90.0,
-        "person_name": "Dr. Klaus-Peter Röhler",
-        "role_title": "Insurance German Speaking Countries",
-        "relevance_summary": "The article discusses parametric insurance solutions that fill coverage gaps, particularly relevant for addressing natural catastrophe risks. Given Dr. Röhler's focus on improving customer churn and cross-selling in the insurance industry, the innovative approach presented can be pivotal in enhancing Allianz’s offerings in property and casualty segments.",
-        "key_quotes": "Parametric insurance supplements traditional insurance in situations, areas, and industries that are challenging to cover, thereby creating extra value."
-    },
-    {
-        "title": "The six habits of highly successful chief risk officers",
-        "artefact_url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/the-six-habits-of-highly-successful-chief-risk-officers",
-        "company_name": "Allianz",
-        "relevance_score": 88.0,
-        "person_name": "Claire-Marie Coste-Lepoutre",
-        "role_title": "CFO",
-        "relevance_summary": "The article discusses the changing role of Chief Risk Officers (CROs) and emphasizes the importance of risk management strategies that align with overall business goals. This is highly relevant for the CFO role, particularly in understanding profitability and integrating risk into financial strategies.",
-        "key_quotes": "Successful CROs who engage in Habit 1—being explicit about their function’s purpose and vision—have already infused risk and resilience into the organization."
-    },
-    {
-        "title": "Global Insurance Report 2025: Finding profitable personal lines growth",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/global-insurance-report-2025-finding-profitable-personal-lines-growth",
-        "company_name": "Allianz",
-        "relevance_score": 75.0,
-        "person_name": "Dr. Klaus-Peter Röhler",
-        "role_title": "Insurance German Speaking Countries",
-        "relevance_summary": "The article discusses growth opportunities in the personal property and casualty insurance sector, which directly relates to improving customer churn and cross-selling, a key interest for Dr. Röhler.",
-        "key_quotes": "The personal lines property and casualty (P&C;) industry writes about a quarter of the world’s insurance premiums... We believe these challenges represent a chance for carriers to innovate, expand coverage, and increase the industry’s relevance."
-    },
-    {
-        "title": "The potential of gen AI in insurance: Six traits of frontrunners",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/insurance-blog/the-potential-of-gen-ai-in-insurance-six-traits-of-frontrunners",
-        "company_name": "Allianz",
-        "relevance_score": 75.0,
-        "person_name": "Dr. Barbara Karuth-Zelle",
-        "role_title": "COO",
-        "relevance_summary": "The article discusses the impact of generative AI on insurance operations, which aligns with Dr. Barbara's interests in IT and innovation in claims management. Enhanced efficiency in underwriting and claims processing through AI technologies is directly relevant to her role.",
-        "key_quotes": "Generative AI is set to revolutionize business operations and enable new ways of creating and delivering insurance products."
-    },
-    {
-        "title": "A live take from ITC Vegas 2024: Connecting the ideas, scaling up the innovation",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/insurance-blog/a-live-take-from-itc-vegas-2024-connecting-the-ideas-scaling-up-the-innovation",
-        "company_name": "Allianz",
-        "relevance_score": 75.0,
-        "person_name": "Dr. Barbara Karuth-Zelle",
-        "role_title": "COO",
-        "relevance_summary": "The article discusses the integration of innovation and technology in the insurance sector, which aligns with Dr. Karuth-Zelle's interests in IT and operational excellence. Insights on legacy systems and the necessity to adopt new technologies are particularly relevant for her role.",
-        "key_quotes": "The tech challenge for the industry is twofold: how to put an end to the technology reaching obsolescence while simultaneously embracing a cutting edge future."
-    },
-    {
-        "title": "How insurers can serve Asia’s aging population",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/insurance-blog/how-insurers-can-serve-asias-aging-population",
-        "company_name": "Allianz",
-        "relevance_score": 75.0,
-        "person_name": "Andreas Wimmer",
-        "role_title": "Asset Management",
-        "relevance_summary": "The article discusses innovative financial products targeting the aging population in Asia, which aligns with Wimmer's focus on integrated retirement solutions. It highlights issues of retirement savings shortfalls and the potential for insurers to offer suitable financial products to address these needs.",
-        "key_quotes": "Insurers in particular are well placed to help ameliorate Asia’s pension gaps by offering products such as annuities. Strategies to help insurers address the retirement shortfall can include introducing innovative products, modifying the way products are sold to help educate customers..."
-    },
-    {
-        "title": "Live take from ITC DIA Europe: For insurtechs, AI offers new opportunities for productivity growth and collaboration",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/insurance-blog/live-take-from-itc-dia-europe-for-insurtechs-ai-offers-new-opportunities-for-productivity-growth-and-collaboration",
-        "company_name": "Allianz",
-        "relevance_score": 75.0,
-        "person_name": "Dr. Barbara Karuth-Zelle",
-        "role_title": "COO",
-        "relevance_summary": "The article discusses collaboration between insurtechs and traditional insurers, which relates closely to Dr. Karuth-Zelle's focus on IT consolidation and the connected insurance platform. Additionally, the insights on AI-driven productivity improvements in operations align with her role in IT and operations.",
-        "key_quotes": "The productivity promise of gen AI...new AI fueled transformations could have a productivity improvement potential as large as 30 to 40 percent."
-    },
-    {
-        "title": "Four key themes from InsureTech Connect 2023",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/insurance-blog/four-key-themes-from-insuretech-connect-2023",
-        "company_name": "Admiral",
-        "relevance_score": 75.0,
-        "person_name": "Milena Mondini de Focatiis",
-        "role_title": "CEO",
-        "relevance_summary": "The article discusses profitability in the insurance sector and innovation through technology, particularly generative AI. This aligns with Milena's focus on car insurance premiums and trends in motor insurance innovation.",
-        "key_quotes": "Enthusiasm about generative AI continues...insurance leaders see gen AI as a transformative opportunity for the industry in the long term."
-    },
-    {
-        "title": "Can European insurtechs live up to the hype?",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/insurance-blog/can-european-insurtechs-live-up-to-the-hype",
-        "company_name": "Allianz",
-        "relevance_score": 75.0,
-        "person_name": "Sirma Boshnakova",
-        "role_title": "Insurance Western and Southern Europe",
-        "relevance_summary": "The article discusses the growing importance of insurtechs in driving digital transformation within the insurance industry, which aligns with her interests in associated companies and connected insurance platforms.",
-        "key_quotes": "European insurtechs have the potential to become a €200 billion market by 2030. Insurtechs have long been viewed as a promising vehicle for driving widespread digital transformation in the insurance industry."
-    },
-    {
-        "title": "McKinsey’s top insurance articles of 2022",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/insurance-blog/mckinseys-top-insurance-articles-of-2022",
-        "company_name": "Allianz",
-        "relevance_score": 75.0,
-        "person_name": "C-Suite",
-        "role_title": "All",
-        "relevance_summary": "The article discusses claims inflation and profitability challenges which are critical issues for the C-Suite when making strategic decisions. Additionally, it touches on innovation within the insurance industry, aligning with their interests in driving customer relations and improving overall performance metrics.",
-        "key_quotes": "What P&C insurers can do as claims inflation pressures results in Europe... Insurance is not typically considered a bastion of innovation."
-    },
-    {
-        "title": "Opportunities for insurers in a rapidly shifting insurtech market",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/insurance-blog/opportunities-for-insurers-in-a-rapidly-shifting-insurtech-market",
-        "company_name": "Allianz",
-        "relevance_score": 80.0,
-        "person_name": "Dr. Barbara Karuth-Zelle",
-        "role_title": "COO",
-        "relevance_summary": "The insights on strategic actions for insurance carriers align with Dr. Karuth-Zelle's role in operations and IT. The need for evaluating technology improvements and addressing the capabilities of insurtechs is crucial for the company's IT advancements.",
-        "key_quotes": "Now is the time to reevaluate those equations for both new and in flight initiatives."
-    },
-    {
-        "title": "Five takeaways from InsureTech Connect 2022",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/insurance-blog/five-takeaways-from-insuretech-connect-2022",
-        "company_name": "Allianz",
-        "relevance_score": 75.0,
-        "person_name": "Sirma Boshnakova",
-        "role_title": "Insurance Western and Southern Europe",
-        "relevance_summary": "The article discusses the importance of technology-driven innovation and the digital transformation of the insurance industry, which aligns with Sirma's roles in Allianz Partners and insurance services.",
-        "key_quotes": "The COVID 19 pandemic improved customers’ comfort with using digital channels, and now many insurance carriers have shifted significantly to become digitally enabled."
-    },
-    {
-        "title": "Five takeaways from InsureTech Connect 2022",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/insurance-blog/five-takeaways-from-insuretech-connect-2022",
-        "company_name": "Admiral",
-        "relevance_score": 75.0,
-        "person_name": "Milena Mondini de Focatiis",
-        "role_title": "CEO",
-        "relevance_summary": "The article discusses technology-driven innovation and profitability in the insurance industry, which is crucial for optimizing car insurance premiums and adapting to trends.",
-        "key_quotes": "Opportunity in the insurance industry remains strong, whether that means moving away from manual processes or using data in better ways."
-    },
-    {
-        "title": "Are insurers ready for the future of mobility?",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/insurance-blog/are-insurers-ready-for-the-future-of-mobility",
-        "company_name": "Admiral",
-        "relevance_score": 75.0,
-        "person_name": "Mike Rogers",
-        "role_title": "Chairman",
-        "relevance_summary": "The article discusses the evolution of mobility and the implications for motor insurance, which aligns with Mike's interest in evolving propositions for market leadership in mobility.",
-        "key_quotes": "The insurance industry must prepare itself for significant shifts in business priorities—the sooner the better."
-    },
-    {
-        "title": "How the European assistance industry can sustain growth in the next normal",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/insurance-blog/how-the-european-assistance-industry-can-sustain-growth-in-the-next-normal",
-        "company_name": "Allianz",
-        "relevance_score": 75.0,
-        "person_name": "Sirma Boshnakova",
-        "role_title": "Insurance Western and Southern Europe",
-        "relevance_summary": "The article discusses growth opportunities in the assistance industry, relevant to Sirma's focus on associated companies and connected insurance platforms.",
-        "key_quotes": "Leading assistance players have taken a number of actions to drive operational efficiencies... Companies will need to forge innovative digital partnerships."
-    },
-    {
-        "title": "How insurtechs can accelerate the next wave of growth",
-        "artefact_url": "https://www.mckinsey.com/industries/financial-services/our-insights/insurance-blog/how-insurtechs-can-accelerate-the-next-wave-of-growth",
-        "company_name": "Allianz",
-        "relevance_score": 75.0,
-        "person_name": "Sirma Boshnakova",
-        "role_title": "Insurance Western and Southern Europe",
-        "relevance_summary": "The article discusses insurtechs and their role in transforming the insurance industry, which relates to Allianz Partners and the connected insurance platform.",
-        "key_quotes": "Tech driven innovation is fundamentally reshaping the insurance industry."
-    }
+  {
+    "person_id": 1,
+    "company_name": "Admiral",
+    "person_name": "Milena Mondini de Focatiis",
+    "role_title": "Group CEO, Admiral",
+    "artefact_url": "https://www.insurtechinsights.com/verisk-acquires-driver-data-company/",
+    "relevance_summary": "Verisk’s move to acquire Data Driven Safety underscores how large-scale data analytics are influencing auto underwriting, risk modeling, and operational efficiency. This resonates with Milena’s priorities around Admiral 2.0, ensuring agility, efficiency, and digital innovation. It can serve as a conversation starter about how leveraging integrated driver data capabilities could bolster Admiral’s broader objectives—such as diversification beyond motor, premium management, and enhancing overall customer engagement. With competitors also tapping into advanced analytics, the article highlights the competitive edge Admiral can maintain by capitalizing on real-time, data-driven underwriting insights.",
+    "snowflake_angle": "Snowflake’s AI Data Cloud for Financial Services can help Admiral centralize and harness vast stores of driver data, accelerating Milena’s business transformation agenda. With Snowflake, Admiral can rapidly derive actionable insights for new product lines, improve existing ones, and scale data-driven decision-making across the enterprise. This aligns directly with Admiral 2.0’s emphasis on generative AI, operational speed, and expanded offerings.",
+    "key_quotes": "['“Data Driven Safety… specialized in aggregating data on drivers from law enforcement records…”', '“…help customers advance their digital transformation strategies...”']"
+  },
+  {
+    "person_id": 1,
+    "company_name": "Admiral",
+    "person_name": "Milena Mondini de Focatiis",
+    "role_title": "Group CEO, Admiral",
+    "artefact_url": "https://www.insurancetimes.co.uk/news/ex-aviva-chief-executive-joins-personal-lines-insurer-as-chairman/1454336.article",
+    "relevance_summary": "As Group CEO, it’s crucial to monitor how former Aviva CEO Mark Wilson is shaping Policy Expert’s strategic expansions—especially with talk of M&A and rapid personal lines growth. This development mirrors Admiral’s aims of business diversification and advanced products (like Admiral Money) while reshaping the motor insurance landscape. Referencing Wilson’s proven track record can open dialogue about how Admiral remains competitive, innovates in motor evolution, and tackles premium inflation by leveraging data agility—key aspects of the Admiral 2.0 transformation.",
+    "snowflake_angle": "With Snowflake’s AI Data Cloud, Admiral can harness unified data across motor, personal lines, and new ventures to identify market opportunities early. This data-driven approach supports faster product innovation, more targeted geographical or segment expansions, and robust responses to competitive moves exemplified by Policy Expert.",
+    "key_quotes": "['“Policy Expert has appointed former Aviva chief executive Mark Wilson as its new chairman.”', '“In his new role, Wilson will drive the personal lines insurer’s strategy and explore potential M&A activity.”', '“Among roles Wilson has held during his 25 year career include chief executive at Aviva… He was also a co founder at motor insurance insurtech Abacai.”']"
+  },
+  {
+    "person_id": 1,
+    "company_name": "Admiral",
+    "person_name": "Milena Mondini de Focatiis",
+    "role_title": "Group CEO, Admiral",
+    "artefact_url": "https://www.insurancebusinessmag.com/uk/news/breaking-news/fraudulent-property-and-casualty-claims-on-the-rise--insurer-523205.aspx",
+    "relevance_summary": "This article highlights rising fraudulent claims and the critical role that proactive, data-driven strategies play in mitigating losses. As Group CEO with a focus on business diversification and curbing claims inflation, you can reference Ecclesiastical Insurance’s success to show how targeted analytics can protect new revenue streams and existing ones alike. It’s a strong talking point for Admiral 2.0 initiatives, underlining the value of advanced data capabilities in delivering cost savings, operational resilience, and future growth.",
+    "snowflake_angle": "Snowflake’s Fraud Detection & Financial Crimes solution provides a single, secure data hub to detect suspicious behavior in real time. By integrating disparate data sources, Admiral can automate fraud checks, reduce claims inflation, and strengthen new product lines—directly reinforcing your vision for Admiral 2.0 and broader business diversification.",
+    "key_quotes": "['“The insurer reported a 37% rise in fraudulent property claims and a 17% increase in fraudulent casualty claims over the past year.”', '“Fraudulent claims are estimated to cost the insurance industry billions annually, with the Association of British Insurers (ABI) reporting a total of £1.1 billion in 2023.”', '“With the UK continuing to experience economic volatility… we can help deter would be fraudsters and protect our customers.”']"
+  },
+  {
+    "person_id": 2,
+    "company_name": "Admiral",
+    "person_name": "Alistair Hargreaves",
+    "role_title": "CEO UK insurance, Admiral",
+    "artefact_url": "https://www.insurtechinsights.com/verisk-acquires-driver-data-company/",
+    "relevance_summary": "Verisk’s acquisition of Data Driven Safety highlights how advanced analytics can refine auto insurance underwriting. As CEO for UK insurance, this development is highly relevant to Alistair’s focus on motor and personal lines, cost management, and inflationary pressures. The daily aggregation of driver records aligns with his commitment to data-driven solutions, positioning Admiral to stay competitive in a market with strong rivals like Aviva and Direct Line. The article can help introduce a conversation on expanding Admiral 2.0 capabilities, accelerating digital transformation, and strengthening risk assessment through deeper, more granular data insights.",
+    "snowflake_angle": "Snowflake’s AI Data Cloud for Financial Services can centralize these new, real-time driver data sources to provide a single source of truth crucial for underwriting, pricing, and risk selection. By using Snowflake, Admiral can incorporate advanced analytics and AI models into existing processes, driving cost-effective underwriting, mitigating inflationary risks, and supporting strategic business diversification far beyond motor.",
+    "key_quotes": "['“Adding billions of driver risk records improves the granularity of our innovative risk indicator solutions…”', '“Verisk will be able to provide insurers with a more complete and cost effective view of auto risk...”']"
+  },
+  {
+    "person_id": 2,
+    "company_name": "Admiral",
+    "person_name": "Alistair Hargreaves",
+    "role_title": "CEO UK insurance, Admiral",
+    "artefact_url": "https://www.insurancebusinessmag.com/uk/news/auto-motor/insurer-calls-for-more-action-on-electric-vehicles-522822.aspx",
+    "relevance_summary": "This newly released article underscores the impact of government incentives on electric vehicle adoption—an area that heavily influences motor insurance premiums and risk models in your portfolio. As CEO UK insurance at Admiral, this directly ties to your market-leading focus on motor, which contributes significantly to overall revenue. You can use these insights to explore more competitive EV insurance offerings. Highlight how tapping into cost-saving angles for policyholders—like reduced Insurance Premium Tax—might help differentiate Admiral, minimize claims on older vehicles, and attract environmentally conscious customers.",
+    "snowflake_angle": "With Snowflake’s AI Data Cloud for Financial Services, you can rigorously analyze trends in EV uptake, set dynamic tariffs based on real-time data, and quickly adapt underwriting rules. This approach supports your drive for scalable solutions, aligning with Admiral 2.0’s emphasis on data-driven agility and reinforcing Admiral’s ability to lead in sustainable motor insurance innovation.",
+    "key_quotes": "['“Removing or reducing insurance premium tax on electric vehicles would be a ‘straightforward way’ to encourage drivers to switch…”', '“64% of motorists believe the government should provide incentives for purchasing electric vehicles.”', '“Among petrol and diesel vehicle owners, 31% intend to buy an electric or hybrid car as their next vehicle.”']"
+  },
+  {
+    "person_id": 2,
+    "company_name": "Admiral",
+    "person_name": "Alistair Hargreaves",
+    "role_title": "CEO UK insurance, Admiral",
+    "artefact_url": "https://www.insurancebusinessmag.com/uk/news/auto-motor/organised-crime-group-pleads-guilty-to-crash-for-cash-scheme-522590.aspx",
+    "relevance_summary": "Because motor insurance makes up the bulk of Admiral's UK revenue, this organized crime group's 'crash for cash' operation is directly relevant to Alistair. It highlights the threat of fraudulent claims on motor lines, driving up loss ratios and prompting premium inflation—key pain points for his role. Discussing how the industry is tackling staged collisions can segue into Admiral’s approach to fraud prevention and how technology investments could reduce costs.",
+    "snowflake_angle": "Drawing on Snowflake’s capabilities for Fraud Detection & Financial Crimes, Alistair can unify data on suspicious claims, vehicle repairs, and policyholder behavior on a single platform. By leveraging real-time insights and analytics, Admiral can lower fraud payouts, manage premium pricing more accurately, and reinforce trust in its core motor insurance offerings.",
+    "key_quotes": "['“Patel and Vadukul… submitted insurance claims and applications… for road traffic collisions that were either staged or never occurred.”' , '“Crash for cash schemes increase insurance premiums for all policyholders…”' , '“The case demonstrated… collaboration between insurers and law enforcement to detect and prevent organised fraud.”']"
+  },
+  {
+    "person_id": 2,
+    "company_name": "Admiral",
+    "person_name": "Alistair Hargreaves",
+    "role_title": "CEO UK insurance, Admiral",
+    "artefact_url": "https://www.insurtechinsights.com/cambridge-mobile-telematics-renews-partnership-with-hastings-direct/",
+    "relevance_summary": "Usage-based insurance via telematics, as showcased by Hastings Direct’s YouDrive program, directly reflects how data-driven solutions can reduce premiums and improve the motor insurance experience. For Alistair, who oversees Admiral’s core UK insurance business, this is a prime example of staying competitive against other big players and leveraging analytics to manage premium and claims inflation. Leveraging the article in conversation with him can illustrate the tangible benefits of advanced telematics and the strategic value it brings to meeting Admiral’s motor and broader personal insurance objectives.",
+    "snowflake_angle": "Snowflake’s underwriting, pricing, and risk selection capabilities allow Admiral to harness real-time telematics data for dynamic insurance coverage. By consolidating disparate data streams into a single platform, Admiral can enhance its motor and personal lines, respond swiftly to inflationary pressures, and outpace competitors with innovative usage-based programs—ultimately fueling Alistair’s mandate to maintain Admiral’s UK leadership in insurance.",
+    "key_quotes": "['“Many good drivers across the UK should pay less for their car insurance... by giving customers a simple way to get a price based on their driving behaviours.”', '“We’re excited to continue helping Hastings Direct reduce road risk across the UK.”', '“The YouDrive Programme... uses CMT’s DriveWell Fusion platform... transforming sensor data from smartphones and IoT devices into actionable driving insights through AI.”']"
+  },
+  {
+    "person_id": 3,
+    "company_name": "Admiral",
+    "person_name": "Scott Cargill",
+    "role_title": "CEO Admiral Money, Admiral",
+    "artefact_url": "https://www.insurancebusinessmag.com/uk/risk-management/news/revealed--top-emerging-threats-for-banks-and-insurers-522830.aspx",
+    "relevance_summary": "This article highlights how geopolitical and cyber uncertainties directly affect financial services expansion—especially pertinent as Admiral Money grows its personal lending portfolio. By understanding the emerging threats, Scott can reinforce credit risk strategies and ensure Admiral Money’s diversification aligns with strong regulatory and cyber resilience frameworks.",
+    "snowflake_angle": "Snowflake’s unified data platform supports comprehensive risk analytics and streamlined compliance specifically tailored to personal lending. By consolidating disparate data sources in real time, Scott gains deeper visibility into credit and fraud risks, ensuring Admiral Money expands responsibly while staying agile in a rapidly changing risk environment.",
+    "key_quotes": "[ '“Firms surveyed… highlighted geopolitical tensions and political instability as major contributors to cybercrime.”' , '“Third party compromise was identified as the top emerging cyber threat in both the short and long term.”' , '“Regulatory requirements are also influencing the focus on ransomware risks.”']"
+  },
+  {
+    "person_id": 4,
+    "company_name": "Admiral",
+    "person_name": "Emma Huntington",
+    "role_title": "CEO Admiral Pioneer",
+    "artefact_url": "https://www.insurtechinsights.com/leaders-reveal-whats-next-for-insurance-20-trends-transforming-the-industry-in-2025/",
+    "relevance_summary": "Emma leads Admiral Pioneer, tasked with exploring new markets and products beyond traditional motor lines. This article underscores how emerging technologies—AI, parametric insurance, quantum computing—can unlock innovative insurance models that align with her mission. The references to quick product development, real-time data, and flexible coverage highlight the strategic benefits of an agile, tech-first mindset. Sharing these insights will validate Emma’s push for new product experiments, tie into Admiral 2.0’s agile aspirations, and reinforce the importance of collaborating with insurtech partners. By pointing to the article’s calls for deeper customer-centric solutions, you can illustrate how Admiral Pioneer can capitalize on advanced analytics to pivot swiftly and differentiate in untapped personal or specialized insurance segments.",
+    "snowflake_angle": "Snowflake’s AI Data Cloud for Financial Services enables Emma to accelerate innovation. With unified, real-time data and flexible analytics, Admiral Pioneer can rapidly prototype new coverage models—like parametric offerings—and partner seamlessly with insurtechs like Flock, driving agility and data-led breakthroughs that fuel Admiral’s diversification.",
+    "key_quotes": "[ '“Innovation teams will work to offer new products and services, and modalities such as parametric insurance can gain importance as a complement to traditional insurance.”', '“Expect more experimentation with quantum computing and hybrid cloud solutions.”' , '“These trends aren’t just technical shifts—they’re a reimagining of the industry’s infrastructure, creating a foundation for scalability, agility, and innovation.”']"
+  },
+  {
+    "person_id": 4,
+    "company_name": "Admiral",
+    "person_name": "Emma Huntington",
+    "role_title": "CEO Admiral Pioneer",
+    "artefact_url": "https://www.insurtechinsights.com/clearcover-launches-generative-ai-voice-automation-for-24-7-customer-support/",
+    "relevance_summary": "As CEO of Admiral Pioneer, you champion emerging lines and innovative growth strategies. Clearcover’s breakthrough in AI-driven customer support exemplifies how to refine customer journeys, cut costs, and offer 24/7 accessibility. The technology’s ability to escalate complex issues quickly aligns with your focus on new product development and ensuring that novel solutions reach scale while maintaining high service standards.",
+    "snowflake_angle": "Snowflake’s AI Data Cloud for Financial Services allows you to harmonize data from across Pioneer’s growing portfolio, enabling rapid experimentation with AI-powered experiences. By integrating generative AI with a single source of data truth, you can pilot advanced solutions and adapt them for new segments, from travel insurance to personal loans.",
+    "key_quotes": "['“…the voice function builds on Clearcover’s partnership with Ada…ensuring customers can access seamless, efficient support…”', '“…empowers our Customer Advocates to focus on their ‘superpowers’—addressing more complex issues…”', '“…transforming routine insurance inquiries into engaging, personalised conversations that drive deeper customer loyalty…”']"
+  },
+  {
+    "person_id": 4,
+    "company_name": "Admiral",
+    "person_name": "Emma Huntington",
+    "role_title": "CEO Admiral Pioneer",
+    "artefact_url": "https://insuranceblog.accenture.com/5-predictions-insurance-industry-2025",
+    "relevance_summary": "The forecast of industry reinvention, driven by demographic shifts, AI, and cost containment, resonates with Emma’s focus on developing new products and ventures for Admiral Pioneer. The article shows how new customer segments—like retirees—and mounting climate risks demand innovative coverage while increased competition requires agile solutions. Use it to illustrate the opportunity for creative insurance models and digital platforms that address emerging needs across personal lines and loans, reinforcing Emma’s mandate to expand Admiral’s footprint beyond core motor offerings.",
+    "snowflake_angle": "Demonstrate how Snowflake’s AI Data Cloud for Financial Services can accelerate Admiral Pioneer’s innovation. Emphasize the platform’s ability to power rapid experimentation, integrate partner data (e.g., Flock Cover), and launch AI-driven products for evolving segments like EV owners, home insurance, or travel. This ensures Admiral stays agile while tapping into new growth areas more quickly.",
+    "key_quotes": "[ '“As people age, insurers will find new opportunities to innovate…tailor health, life and hybrid retirement offerings.”' , '“Faced with new opportunities and risks…we expect the industry to…spark reinvention.”' , '“In 2025, insurers will focus on sourcing skills needed to scale AI…across market facing and corporate functions.”']"
+  },
+  {
+    "person_id": 5,
+    "company_name": "Allianz",
+    "person_name": "Dr. Barbara Karuth-Zelle",
+    "role_title": "Operations, IT and Organization (COO) , Allianz SE",
+    "artefact_url": "https://www.insurtechinsights.com/axa-becomes-first-global-insurer-to-join-stanford-hais-corporate-affiliate-program/",
+    "relevance_summary": "This story highlights how AI can integrate seamlessly into enterprise operations, a focal point for her as COO responsible for IT and organization. AXA’s partnership with Stanford HAI illustrates how harnessing academic expertise can accelerate productivity improvements, from IT decommissioning to process digitization. Emphasizing fairness, bias mitigation, and interpretability resonates with efforts to maintain efficiency while ensuring trustworthy systems. Sharing this article can spark a discussion on aligning strategic AI initiatives—like generative AI deployment—to support operational excellence.",
+    "snowflake_angle": "Use Snowflake’s fully managed platform to centralize data from disparate systems, simplifying digital transformation. By powering AI-driven insights at scale, Snowflake can support Dr. Karuth-Zelle’s mandate to streamline operations, reduce complexity, and bolster productivity across Allianz SE’s global landscape.",
+    "key_quotes": "['“AXA has become the first global insurer to join the Stanford Human Centered Artificial Intelligence (HAI) Corporate Affiliate Program.”', '“We’re eager to support this important research into the development of AI models that are trustworthy, human centric, and sustainable…”']"
+  },
+  {
+    "person_id": 5,
+    "company_name": "Allianz",
+    "person_name": "Dr. Barbara Karuth-Zelle",
+    "role_title": "Operations, IT and Organization (COO) , Allianz SE",
+    "artefact_url": "https://www.propertycasualty360.com/2025/02/03/reasons-cloud-risk-management-is-essential-across-industries/",
+    "relevance_summary": "This piece reinforces how cloud-based analytics and AI efforts can streamline Allianz’s global IT, operations, and back-end processes. It underlines the growing reliance on advanced data infrastructure to manage innovation in underwriting, predictive risk modeling, and customer engagement. In your discussion with Dr. Barbara, focus on how adopting these trends supports productivity gains, cost reduction, and the scaling of generative AI across Allianz’s lines of business.",
+    "snowflake_angle": "Snowflake’s unified data platform addresses operational complexities, making it easier for enterprises to deploy AI and automation. For Dr. Barbara, this means faster IT decommissioning, simplified workflows, and global scalability—key elements in her strategic priorities around reinforcing productivity and digital transformation.",
+    "key_quotes": "['“Insurers are using AI and machine learning for more precise underwriting, dynamic pricing, and fraud detection.”' , '“Predictive analytics helps insurers understand customer behavior…offer personalized policies.”']"
+  },
+  {
+    "person_id": 5,
+    "company_name": "Allianz",
+    "person_name": "Dr. Barbara Karuth-Zelle",
+    "role_title": "Operations, IT and Organization (COO) , Allianz SE",
+    "artefact_url": "https://www.insurtechinsights.com/lloyds-introduces-data-tool-revealing-us5-trillion-impact-of-extreme-weather-events/",
+    "relevance_summary": "As COO focusing on productivity, global scalability, and operational efficiencies, Barbara needs insights into how climate-driven disruptions affect Allianz infrastructure and IT strategy. This article emphasizes the need for robust data and risk modeling to anticipate large-scale events, reinforcing the importance of agile, tech-enabled solutions. By sharing these details, a salesperson can frame how data platforms and automation can optimize business continuity, reduce complexity, consolidate risk insights, and ensure operational resilience in the face of climate volatility. It’s an ideal opening to showcase technology that drives productivity and scales easily.",
+    "snowflake_angle": "Snowflake’s single, fully managed platform can unify Allianz’s operational processes and data, enhancing resilience. With the AI Data Cloud, Barbara can oversee advanced analytics initiatives crucial for driving process digitization and managing global risk exposure. This aligns with her productivity mandate by streamlining IT footprints and expediting data-driven responses to climate threats.",
+    "key_quotes": "['“This research … provides risk owners with a profound understanding of their exposure to critical threats like extreme weather.”', '“Potential economic losses … could prompt significant shifts in geopolitical alignments and consumer behaviors.”', '“It evaluates the GDP impact of extreme events across 107 countries, categorized by severity levels: major, severe, and extreme.”']"
+  },
+  {
+    "person_id": 6,
+    "company_name": "Allianz",
+    "person_name": "Nick Hobbs",
+    "role_title": "Managing Director - Commercial, Allianz Holdings",
+    "artefact_url": "https://www.insurtechinsights.com/allianz-axa-and-zurich-are-winning-against-inflation-challenges-says-fitch/",
+    "relevance_summary": "This article affirms Allianz’s success in overcoming inflationary and macroeconomic stresses, an essential topic for Nick Hobbs in his role overseeing commercial insurance. The strong performance underlines robust market positioning and the effectiveness of cost-mitigation trends—indicating how Allianz can leverage sophisticated pricing and operational strategies to minimize inflation-driven claim costs. This context allows a discussion on how deeper analytics and streamlined data management solutions might further fortify the commercial segment's resilience and performance.",
+    "snowflake_angle": "By leveraging Snowflake’s AI Data Cloud, Allianz can harness real-time analytics to spot inflation trends early and rapidly respond with informed pricing decisions. Snowflake’s single, secure platform supports advanced underwriting and risk modeling, helping to maintain competitiveness, reduce expense ratios, and reinforce the strength of the commercial portfolio—aligning with Allianz’s priority of driving smart growth.",
+    "key_quotes": "[ '“Allianz... has effectively managed the effects of the macroeconomic environment, such as high inflation…”' , '“Allianz, AXA and Zurich using pricing power to offset high inflation…”' , '“…significant price adjustments in non life… mitigated the effects of the challenging macroeconomic environment.”']"
+  },
+  {
+    "person_id": 6,
+    "company_name": "Allianz",
+    "person_name": "Nick Hobbs",
+    "role_title": "Managing Director - Commercial, Allianz Holdings",
+    "artefact_url": "https://www.insurtechinsights.com/oyster-unveils-new-ai-powered-products-for-business-insurance/",
+    "relevance_summary": "You can revisit the conversation with Nick Hobbs by stressing how AI-driven insurance solutions speed up commercial lines quoting and boost competitiveness. The article underlines the potential for advanced digital workflows that can address inflation pressures and costly manual processes. By referencing Oyster’s carrier-agnostic approach, you can discuss how Allianz can adopt similar innovations for cross-selling and delivering more resilient commercial insurance offerings.",
+    "snowflake_angle": "Show how Snowflake’s Customer 360 in Financial Services use case can integrate data from varied commercial lines, creating insights for cross-selling and a more robust risk selection framework. Nick Hobbs can see how AI-driven analytics, supported by Snowflake, aids in achieving strategic objectives for growth and resilience.",
+    "key_quotes": "['“Oyster… unveiled a suite of new digital products designed to modernize the P&C insurance experience for small and medium sized businesses.”', '“With the rapid improvements in LLMs, we’re… integrate AI into our digital platform to help modern businesses more proactively manage insurance and risk.”']"
+  },
+  {
+    "person_id": 6,
+    "company_name": "Allianz",
+    "person_name": "Nick Hobbs",
+    "role_title": "Managing Director - Commercial, Allianz Holdings",
+    "artefact_url": "https://www.insurtechinsights.com/louise-smith-to-lead-wtws-consulting-and-technology-business/",
+    "relevance_summary": "Focusing again on Commercial Lines at Allianz, this article emphasizes how data strategy and digital trading can give commercial insurers a strategic edge. WTW’s appointment demonstrates industry momentum toward faster, more accurate underwriting, which directly supports your mission of smart growth, cross-sell, and reducing churn. By discussing these points, you can reinforce how adopting new technology solutions helps respond to evolving customer expectations, manage inflation-related cost pressures, and improve overall risk selection in commercial portfolios.",
+    "snowflake_angle": "By using Snowflake’s AI Data Cloud, you can integrate real-time data sets from underwriting, claims, and market sources—helping Commercial Lines teams deploy advanced analytics and AI-driven features for targeted cross-selling, flexible pricing, and an enhanced digital trading ecosystem.",
+    "key_quotes": "[ '“…she will lead the unit’s Commercial Lines data strategy…”' , '“…with digital trading becoming the top priority on our clients’ agenda.”']"
+  },
+  {
+    "person_id": 7,
+    "company_name": "Allianz",
+    "person_name": "Ida Luka-Lognoné",
+    "role_title": "Chief Officer Health, Allianz Partners",
+    "artefact_url": "https://www.insurtechinsights.com/allianz-axa-and-zurich-are-winning-against-inflation-challenges-says-fitch/",
+    "relevance_summary": "As Chief Officer Health at Allianz Partners, you’ll find the inflation discussion especially relevant for maintaining profitability in health insurance. The article underscores how Allianz, amid high costs for medical treatments and services, uses strong risk management and agile pricing to address macroeconomic headwinds. This context can open a conversation on employing data-driven strategies to further refine product offerings and manage inflation-driven claim spikes without compromising service quality.",
+    "snowflake_angle": "Snowflake’s platform provides a single source of truth for patient data, claims, and partner networks, enabling advanced analytics to identify cost trends and optimize premium adjustments. By integrating all health-related data into Snowflake’s AI Data Cloud, you can streamline regulatory compliance, enhance customer experience, and quickly respond to healthcare inflation pressures to protect margins while maintaining high-quality care.",
+    "key_quotes": "[ '“…very strong financial performance by using their pricing power to offset the impact of high inflation…”' , '“Allianz… successfully managed 2022’s macroeconomic challenges…”' , '“…very strong company profiles with… rigorous risk management help to offset headwinds…”']"
+  },
+  {
+    "person_id": 7,
+    "company_name": "Allianz",
+    "person_name": "Ida Luka-Lognoné",
+    "role_title": "Chief Officer Health, Allianz Partners",
+    "artefact_url": "https://www.insurtechinsights.com/claimbuddy-raises-us5-million-in-series-a-funding-to-boost-health-insurance-claim-assistance-platform/",
+    "relevance_summary": "Ida, as Chief Officer Health at Allianz Partners, focuses on improving health insurance offerings and the customer journey. This article about ClaimBuddy’s success in simplifying the claim settlement process speaks directly to her interest in cutting-edge health tech solutions. The piece validates how digital-first claims platforms can enhance patient satisfaction, reduce administrative burdens for hospitals, and ultimately elevate Allianz’s health insurance experience by speeding up reimbursements and customer service responsiveness.",
+    "snowflake_angle": "Position Snowflake’s AI Data Cloud for Financial Services as an enabler for more streamlined health insurance claim processes. Emphasize how Snowflake’s single platform can unify patient, partner, and claims data to drive faster settlements, automate reimbursements, and create more transparent experiences. By leveraging Snowflake’s advanced AI and analytics capabilities, Ida can implement real-time insights to shape innovative financial tools and strengthen the resilience of Allianz’s health insurance solutions.",
+    "key_quotes": "['“ClaimBuddy has processed claims for over 35,000 patients, totaling a value exceeding 500 crores.”', '“The platform has established collaborations with more than 250 partner hospitals across India, positioning itself as a vital player in the health insurance claim assistance sector.”', '“Our vision for ClaimBuddy has always been to alleviate the burden on both patients and hospitals in navigating complexities of healthcare expenses & health insurance claims.”']"
+  },
+  {
+    "person_id": 8,
+    "company_name": "Allianz",
+    "person_name": "Neil Brown",
+    "role_title": "Head of UK Distribution, Allianz GI",
+    "artefact_url": "https://www.insurtechinsights.com/liberty-mutual-explores-1-billion-sale-of-europe-businesses/",
+    "relevance_summary": "Neil, Liberty Mutual’s plan to sell its European businesses signals ongoing consolidation that could impact European capital flows, a point of interest for Allianz Global Investors. Referencing this news can help you highlight how M&A trends in the insurance sector open new opportunities in asset management, particularly in aligning or repositioning portfolios for incoming investment and distribution partnerships. It also creates space to discuss reinforcing productivity through streamlined data and technology investments to remain competitive and nimble.",
+    "snowflake_angle": "Snowflake’s AI Data Cloud for Financial Services can unify multiple data sources, enabling rapid portfolio analysis and real-time risk assessment. This empowers Allianz GI to offer differentiated solutions, supporting distribution strategies while reducing operational hurdles through a single, scalable data platform.",
+    "key_quotes": "['“The assets could attract interest from rival European insurers, the people said.”', '“Insurers have accounted for about $33.4 billion of mergers and acquisitions this year.”', '“Liberty Mutual has been bulking up in U.S. property/casualty insurance.”']"
+  },
+  {
+    "person_id": 9,
+    "company_name": "Aon",
+    "person_name": "Jane Kielty",
+    "role_title": "CEO, Aon UK Limited",
+    "artefact_url": "https://www.insurancejournal.com/news/international/2025/02/03/810495.htm",
+    "relevance_summary": "Miller’s acquisition of AHJ emphasizes new reinsurance capabilities and expansion into multiple regions. As CEO of Aon UK, Jane oversees Commercial Risk and Reinsurance solutions, making this deal directly relevant to her focus on innovative risk management strategies, growth in specialty lines, and increased competitiveness in the UK market. The article’s emphasis on scaling reinsurance services and unlocking broader global footprints may prompt a conversation on how Aon UK can leverage similar moves to enhance its client offerings and maintain industry leadership.",
+    "snowflake_angle": "Snowflake’s Underwriting, Pricing, and Risk Selection use case can streamline large-scale data across various geographies and business lines. By consolidating risk profiles and advanced analytics on a single data platform, Aon UK can optimize pricing strategies, underwriting decisions, and compliance requirements—ultimately supporting Jane’s objective to reinforce Aon’s leading position in commercial and reinsurance solutions.",
+    "key_quotes": "[ '“AHJ has a focus on reinsurance across property/casualty and marine & energy...”' , '“Alongside sharing our commitment to specialism, AHJ is an excellent cultural fit...”' , '“AHJ will give us an established reinsurance platform from which to drive further growth...”']"
+  },
+  {
+    "person_id": 9,
+    "company_name": "Aon",
+    "person_name": "Jane Kielty",
+    "role_title": "CEO, Aon UK Limited",
+    "artefact_url": "https://www.insurancebusinessmag.com/uk/news/catastrophe/wtw-report-finds-huge-insurance-gap-for-natural-disasters-as-2024-sees-massive-losses-522843.aspx",
+    "relevance_summary": "As CEO of Aon UK, Jane is focused on delivering solutions across Commercial Risk, Reinsurance, Health, and Wealth. This article’s emphasis on unprecedented catastrophe losses and Europe’s weather events underscores the need for comprehensive risk transfer and advisory services—critical discussion areas for Jane’s engagement with UK-based clients. Bringing this up positions you to highlight how Aon can integrate resilience planning and innovation across all business lines.",
+    "snowflake_angle": "By leveraging Snowflake’s AI Data Cloud, Jane’s UK teams can unify client and market data to deliver robust insurance and risk advisory strategies. This single source of truth accelerates regulatory reporting, improves underwriting and pricing, and strengthens real-time analytics—aligning with her commitment to deliver better risk mitigation and client outcomes across the UK market.",
+    "key_quotes": "[ '“Notable events in 2024 included the Valencia floods in Spain, which caused €3.7 billion in claims...”' , '“Climate change is increasingly linked to these events...”' , '“Call to action on resilience... need for improved risk modelling, innovative insurance solutions...”']"
+  },
+  {
+    "person_id": 9,
+    "company_name": "Aon",
+    "person_name": "Jane Kielty",
+    "role_title": "CEO, Aon UK Limited",
+    "artefact_url": "https://www.insurancebusinessmag.com/uk/news/catastrophe/wtw-report-finds-huge-insurance-gap-for-natural-disasters-as-2024-sees-massive-losses-522843.aspx",
+    "relevance_summary": "Focusing on the UK market, this article shows how technology is shaping insurance distribution and brings to light the challenges brokers face. Since Jane oversees various UK solutions—Commercial Risk, Reinsurance, Health, and Wealth—understanding heightened broker dissatisfaction and tightening capacity can guide more strategic and tech-savvy approaches. By highlighting these trends, Jane can reinforce Aon UK’s competitive edge and foster stronger relationships with distribution partners.",
+    "snowflake_angle": "Snowflake’s single data platform equips Jane’s UK business units with integrated analytics and AI-driven insights, reducing manual processes and improving broker satisfaction. Whether it’s Commercial Risk, Health, or Wealth solutions, unifying data sources helps optimize underwriting, pricing, and risk management—precisely the enhancements the article suggests insurers need. This aligns with Jane’s mission to streamline operations, offer advanced client-facing services, and boost Aon’s appeal across the UK.",
+    "key_quotes": "['“In 2023, independent agents and brokers dominated property and casualty (P&C) distribution, capturing 82-87% of commercial line premiums in the UK and the United States.”', '“Carriers know that agent frustration is at an all time high and are making moves to address it.”', '“The broker’s role is evolving … the days of simply selling a policy and renewing it year after year are over.”']"
+  },
+  {
+    "person_id": 9,
+    "company_name": "Aon",
+    "person_name": "Jane Kielty",
+    "role_title": "CEO, Aon UK Limited",
+    "artefact_url": "https://www.insurancejournal.com/news/international/2025/02/03/810439.htm",
+    "relevance_summary": "For the CEO of Aon UK, this piece underscores challenges in the City of London since Brexit—from slowing financial growth to missed opportunities in service exports. It’s highly relevant for guiding how Aon’s UK business units—spanning Commercial Risk, Reinsurance, Health, and Wealth—will adapt to a post-Brexit landscape where emerging pressures on competitiveness create both obstacles and openings. Leveraging these insights, Jane can steer conversations around distributed innovation, portfolio shifts to higher-growth areas, and stronger client support in a market forced to reimagine its role in global finance.",
+    "snowflake_angle": "Snowflake’s AI Data Cloud for Financial Services can accelerate Aon UK’s innovation by enabling seamless data sharing and real-time analytics across commercial risk, health, and wealth solutions. Using Snowflake’s unified platform, Jane can enhance client offerings in underwriting, compliance, and customer engagement—driving efficiency and uncovering new revenue streams. This aligns perfectly with Aon’s ambition to invest in high-growth, data-driven solutions that help clients manage the heightened complexity and demand for sophisticated risk, health, and wealth products in a transforming City of London.",
+    "key_quotes": "[ '“Financial services is diminishing in importance for the UK economy… It had fallen to 9.2% of output by the Brexit referendum and has slipped further to 8.6%.”' , '“The City of London… performed even worse than the rest of the economy in the years following the Brexit referendum.”' , '“Governments… have stepped up efforts… to revive the City of London… The current Labour administration has also ordered City regulators to tweak rules to more aggressively pursue growth.”']"
+  },
+  {
+    "person_id": 10,
+    "company_name": "Aon",
+    "person_name": "Andy Marcell",
+    "role_title": "CEO - Risk Capital, Aon plc",
+    "artefact_url": "https://www.insurtechinsights.com/knighthead-insurance-group-acquires-merit-life-rebrands-as-knighthead-life/",
+    "relevance_summary": "Andy, this article is a valuable conversation starter about expansion opportunities in reinsurance and advanced risk analytics. Knighthead Insurance Group’s acquisition of Merit Life showcases a strategic move into the U.S. market, illustrating how fresh capital, reinsurance infrastructure, and innovative retirement products can drive growth and bolster market presence. This aligns directly with your focus on building Risk Capital capabilities at Aon—particularly around reinsurance solutions and portfolio diversification. By referencing Knighthead’s approach to combining technology with robust risk and capital management, you can emphasize how Aon’s own risk transfer and advisory services could evolve to meet emerging demands, boost client value, and further expand in high-growth insurance segments.",
+    "snowflake_angle": "Snowflake’s “Underwriting, Pricing and Risk Selection” solution can help you harness real-time data to refine risk models and accelerate reinsurance strategies—mirroring Knighthead’s fast, tech-driven entry into new markets. This advances Aon’s Risk Capital capabilities with scale, speed, and precision.",
+    "key_quotes": "[ '“The acquisition positions the company to address growing retirement needs through innovative solutions and a consumer centric approach.”' , '“The newly branded Knighthead Life is pivotal to fulfilling our long term business objectives of bringing Knighthead’s insurance and reinsurance expertise to the United States.”' , '“This strategic move underscores Knighthead’s ambition to become a significant player in the U.S. insurance and retirement market…”']"
+  },
+  {
+    "person_id": 10,
+    "company_name": "Aon",
+    "person_name": "Andy Marcell",
+    "role_title": "CEO - Risk Capital, Aon plc",
+    "artefact_url": "https://www.insurancejournal.com/news/national/2025/02/04/810608.htm",
+    "relevance_summary": "As CEO of Aon’s Risk Capital segment, this article’s focus on how DUAEs leverage advanced analytics and automated underwriting directly supports your mandate for delivering effective risk transfer and capital solutions. DUAEs’ agility and technology-driven specialties resonate with Aon’s goal of expanding commercial risk and reinsurance solutions, helping clients handle complex risks with speed and precision. Sharing these insights highlights new opportunities to enhance Aon’s reinsurance offerings and strengthen partnerships by adopting or collaborating with tech-centric underwriting strategies.",
+    "snowflake_angle": "Snowflake’s AI Data Cloud can bolster Aon’s risk capital operations by enabling real-time data sharing across commercial and reinsurance domains. By incorporating Snowflake’s Underwriting, Pricing, and Risk Selection use case, Andy can showcase how Aon can harness predictive analytics, automate routine tasks, and rapidly adapt solutions for clients, aligning perfectly with the article’s emphasis on technology-fueled underwriting and continued growth in specialty markets.",
+    "key_quotes": "[ '“Most recent DUAEs have an origin story that involves a technology role.”' , '“DUAEs… can rapidly respond to market changes, as they are not burdened by legacy systems.”' , '“Carriers partnering with DUAEs can benefit from lower operational costs and quicker turnaround times.”']"
+  },
+  {
+    "person_id": 10,
+    "company_name": "Aon",
+    "person_name": "Andy Marcell",
+    "role_title": "CEO - Risk Capital, Aon plc",
+    "artefact_url": "https://www.insurancejournal.com/news/international/2025/02/03/810446.htm",
+    "relevance_summary": "Andy, as CEO of Risk Capital at Aon, you’ll find this article highly relevant for reinsurance strategy. It highlights significant wildfire-related losses and forecasts that property catastrophe reinsurance rates may need to hold firm or climb. This frames a critical moment where Aon’s capacity to adapt and efficiently deploy reinsurance solutions will be tested. Use this story to illustrate how industry-wide catastrophe losses can create new opportunities for innovative risk-transfer structures and advanced analytical modeling. In conversations, emphasize Aon’s unique position to support clients in navigating changing supply-and-demand conditions, reinforcing your leadership around integrated reinsurance and capital solutions.",
+    "snowflake_angle": "Snowflake’s Underwriting, Pricing, and Risk Selection capabilities enable rapid scenario modeling and data sharing across insurers. By unifying diverse data sets, you can fine-tune reinsurance structures, strengthen Aon’s advisory and capital management services, and respond swiftly to market shifts.",
+    "key_quotes": "[ '“We will be ready to deploy capacity, but only if prices are commensurate with the additional risk we will assume...”' , '“We have the appetite to continue providing the protection that our clients... clearly need. In order to do so... rates need to remain firm or even increase.”']"
+  },
+  {
+    "person_id": 11,
+    "company_name": "Aon",
+    "person_name": "Greg Case",
+    "role_title": "CEO, Aon plc",
+    "artefact_url": "https://www.embroker.com/blog/building-a-risk-aware-culture/",
+    "relevance_summary": "This article’s emphasis on fostering a risk-aware culture directly supports your Aon United vision—particularly in Risk Capital and Human Capital. By championing top-down risk mitigation practices, you can reinforce Aon’s commitment to innovation and synergy across newly integrated acquisitions like NFP. The piece highlights how proactively identifying vulnerabilities and strengthening data safeguards can drive both operational resilience and market credibility. In conversation with Greg, this article can help illustrate how embedding risk awareness company-wide enriches Aon’s portfolio strategies, deepens client trust, and drives sustainable, profitable growth.",
+    "snowflake_angle": "Snowflake’s AI Data Cloud for Financial Services offers a unified data environment to pinpoint and manage risks—perfect for supporting the multi-faceted risk capital solutions across Aon. By seamlessly integrating data sources and advanced analytics, you can scale new offerings quickly and enhance profitability. With Snowflake, leadership can align acquisitions, such as NFP, under a single data strategy, fostering faster innovation and delivering shared insights across commercial, reinsurance, and human capital solutions.",
+    "key_quotes": "[ '“Don’t leave your tech company exposed. Confirm that you have all necessary protections in place….”' , '“Proactive risk mitigation can lead to better decision making, improved efficiencies, increased employee engagement, and more new business.”' , '“Having a risk aware culture means that everyone in your organization shares a responsibility to proactively identify, assess, and mitigate risks.”']"
+  },
+  {
+    "person_id": 11,
+    "company_name": "Aon",
+    "person_name": "Greg Case",
+    "role_title": "CEO, Aon plc",
+    "artefact_url": "https://www.insurtechinsights.com/aig-expands-global-leadership-role-for-jon-hancock/",
+    "relevance_summary": "This article highlights how AIG is restructuring its business segments to streamline operations and achieve greater synergy—an approach that mirrors Aon United’s strategic priorities around integration and margin expansion. Sharing how Jon Hancock’s expanded role consolidates key business lines can help underscore the competitive landscape and demonstrate how major players are focusing on efficiency across Commercial and Personal Insurance lines. In your conversation, you can use this news to illustrate industry momentum toward unified platforms—similar to Aon’s drive to simplify and innovate through acquisitions like NFP—reinforcing Greg Case’s commitment to delivering organic and inorganic growth while maximizing shareholder value.",
+    "snowflake_angle": "Highlight how Snowflake’s AI Data Cloud can accelerate integrated data strategies for global insurance operations, ensuring that any newly consolidated divisions (like AIG’s) achieve faster insights. By unifying disparate data sources, Snowflake’s platform can support Aon’s own synergy goals and help manage M&A outcomes more effectively—supporting Greg Case’s focus on scaling innovation across Risk and Human Capital lines.",
+    "key_quotes": "['“Our new structure simplifies our reporting segments, while driving operational efficiency and enhanced value for all of our stakeholders.”', '“Hancock will continue to oversee the International Commercial Insurance division while assuming responsibility for the newly established Global Personal Insurance business.”']"
+  },
+  {
+    "person_id": 12,
+    "company_name": "Aviva",
+    "person_name": "Doug Brown",
+    "role_title": "CEO of Insurance, Wealth & Retirement, Aviva",
+    "artefact_url": "https://www.insurancebusinessmag.com/uk/news/breaking-news/aon-reports-notable-growth-in-revenue-in-fourth-quarter-523048.aspx",
+    "relevance_summary": "This article showcases how Aon leveraged both acquired revenue and organic growth to boost overall performance. For Doug Brown, who is overseeing Aviva’s Insurance, Wealth & Retirement segment and driving M&A-related expansion, Aon’s success provides a timely example of strategic acquisitions that strengthen core offerings and spur top-line momentum. Sharing Aon’s results can spark a conversation around how Aviva can similarly maximize returns from its own recent acquisitions and highlight the opportunity to diversify product lines and amplify growth in capital-light businesses.",
+    "snowflake_angle": "Snowflake’s AI Data Cloud for Financial Services can support Aviva’s M&A strategy by consolidating data from acquired entities, providing real-time analytics for cross-selling and risk management, and accelerating time to value in new markets. This aligns with Doug’s focus on leveraging acquisitions to bolster Aviva’s insurance and wealth segments through operational efficiencies and strategic growth.",
+    "key_quotes":  "['“The increase was primarily driven by acquired revenues from NFP and 6% organic revenue growth…”', '“Aon introduced its 2025 guidance, projecting continued mid single digit organic revenue growth, adjusted margin expansion, strong adjusted EPS growth, and double digit free cash flow growth.”', '“We generated 6% organic revenue growth for the fourth quarter and full year, with mid single digit growth or better across all our solution lines.”']"
+  },
+  {
+    "person_id": 12,
+    "company_name": "Aviva",
+    "person_name": "Doug Brown",
+    "role_title": "CEO of Insurance, Wealth & Retirement, Aviva",
+    "artefact_url": "https://insurtechdigital.com/articles/munich-re-digital-health-records-cut-insurance-risk-by-35",
+    "relevance_summary": "This article offers clear evidence that integrating electronic health records reduces underwriting costs and quickly flags risk factors—perfect for a conversation with Doug, given his responsibility for health, life and critical illness insurance within Aviva. Use this to show how digital health data can accelerate policy decisions for higher-value contracts and older applicants, helping Aviva boost profitability and keep pace in competitive general insurance markets. It speaks directly to Doug’s focus on growth in capital-light businesses, highlighting real-world examples of improved speed, accuracy, and savings.",
+    "snowflake_angle": "Focus on how Snowflake’s AI Data Cloud for Financial Services can power advanced underwriting, pricing, and risk selection by consolidating health data in one platform. Emphasize that bringing external records into Snowflake enhances Aviva’s ability to tailor premiums, detect hidden risk, and maintain a market edge.",
+    "key_quotes": "['“Electronic Health Records (EHRs) are reducing insurance risk assessment costs by 35%.”', '“Risk assessment improvements were most significant in policies for older age groups and higher value insurance contracts.”', '“The system identified multiple risk factors that traditional processes might miss.”']"
+  },
+  {
+    "person_id": 13,
+    "company_name": "Aviva",
+    "person_name": "Jason Storah",
+    "role_title": "CEO of UK & Ireland General Insurance, Aviva",
+    "artefact_url": "https://www.insurancebusinessmag.com/uk/risk-management/news/revealed--top-emerging-threats-for-banks-and-insurers-522830.aspx",
+    "relevance_summary": "For the CEO of UK & Ireland General Insurance, this article illuminates emerging risks that could influence underwriting, pricing, and overall portfolio profitability. It highlights how geopolitical tensions and advanced cyber threats can disrupt supply chains and heighten operational exposure. Using these insights, Jason can emphasize proactive risk assessment and data-driven underwriting strategies to maintain Aviva’s leadership in the UK general insurance market. The reference to AI heightening the severity of cyberattacks presents an opportunity to explore new ways of harnessing data-driven intelligence, ensuring Aviva’s offerings remain both competitive and resilient amid evolving threats.",
+    "snowflake_angle": "With Snowflake’s AI Data Cloud for Financial Services, Jason’s general insurance division can leverage unified data for precise risk assessments and faster underwriting decisions. Advanced analytics on a single platform also supports quick adaptation to geopolitical and cyber threats—helping Aviva guard against ransomware and other emerging risks while maintaining a competitive edge in general insurance.",
+    "key_quotes": "['“Geopolitical uncertainty is the primary driver of emerging threats for banks and insurers...”', '“Technology & digital strategy and business service disruption as the second and third most significant risks.”', '“Ransomware attacks were the second highest concern for 76% of firms in the short term...”']"
+  },
+  {
+    "person_id": 13,
+    "company_name": "Aviva",
+    "person_name": "Jason Storah",
+    "role_title": "CEO of UK & Ireland General Insurance, Aviva",
+    "artefact_url": "https://www.insurancebusinessmag.com/uk/news/technology/agents-juggle-technology-with-market-pressures-as-insurers-scale-platforms-522800.aspx",
+    "relevance_summary": "This article highlights how broker and agent satisfaction, especially in general insurance, is deeply impacted by technology adoption, rate hikes, and tightening underwriting controls—key concerns for the CEO of UK & Ireland General Insurance. Bringing this up with Jason shows you’re tuned into the commercial and operational pressures within his segment. It also opens up a conversation about leveraging digital solutions that both reduce broker complexities and maintain Aviva’s leadership in the UK GI market.",
+    "snowflake_angle": "With Snowflake’s AI Data Cloud, Jason can strengthen Aviva’s general insurance offering by enabling real-time data analytics for underwriting, pricing, and risk selection. Streamlined access to broker and customer data in one secure platform helps manage rate changes effectively, reduce friction for brokers, and elevate Aviva’s standing in a competitive market.",
+    "key_quotes": "['“A policy that once took one or two touchpoints now requires three, four, or even more.”', '“Carriers know that agent frustration is at an all time high and are making moves to address it.”', '“The reality is that agents are caught in the middle… struggling to find options that fit within their budgets.”']"
+  },
+  {
+    "person_id": 13,
+    "company_name": "Aviva",
+    "person_name": "Jason Storah",
+    "role_title": "CEO of UK & Ireland General Insurance, Aviva",
+    "artefact_url": "https://www.insurancetimes.co.uk/news/ex-aviva-chief-executive-joins-personal-lines-insurer-as-chairman/1454336.article",
+    "relevance_summary": "With Mark Wilson taking the helm at Policy Expert, this article signals a rising competitor in personal lines insurance, a segment central to Aviva UK & Ireland General Insurance. Wilson’s emphasis on profitable expansion and M&A could reshape the market. This is relevant to Jason Storah because it highlights how a new player—led by Aviva’s former CEO—may rapidly evolve. By referencing the article, a salesperson can highlight the importance of advanced underwriting, risk selection, and customer-focused innovation. It opens the door for discussing how Aviva can differentiate and protect its leadership in general insurance through data-driven decision-making, improved pricing strategies, and seamless customer experiences.",
+    "snowflake_angle": "Snowflake’s AI Data Cloud for Financial Services can equip Jason’s team with a real-time, unified view of underwriting, customer behavior, and risk. This bolsters Aviva’s agility in responding to new entrants like Policy Expert, accelerating product innovation and maintaining market leadership.",
+    "key_quotes": "['“In his new role, Wilson will… explore potential M&A activity.”', '“Policy Expert… surpassed 1.5m policyholders across its combined home, motor and newly launched pet insurance proposition.”', '“I look forward to helping the business continue to succeed during its next stage of growth.”']"
+  },
+  {
+    "person_id": 14,
+    "company_name": "Aviva",
+    "person_name": "John Cummings",
+    "role_title": "Chief Information Officer, Aviva",
+    "artefact_url": "https://www.insurancebusinessmag.com/uk/news/technology/agents-juggle-technology-with-market-pressures-as-insurers-scale-platforms-522800.aspx",
+    "relevance_summary": "As Aviva’s CIO driving digital transformation and efficiency, you can leverage this article to discuss how AI and automation are reshaping insurance distribution by streamlining underwriting and broker workflows. Use it to highlight the importance of modern platforms that enable real-time analytics, reduce manual tasks, and enhance agent engagement—directly supporting Aviva’s goals of a technology-led operational model. Emphasize how the article’s findings on carriers’ digitization challenges reinforce the need for sophisticated data infrastructures, sparking a conversation about staying ahead of the curve in harnessing data-driven solutions.",
+    "snowflake_angle": "Snowflake’s AI Data Cloud offers a unified data architecture that can power advanced analytics, real-time pricing, and underwriting efficiency. For a CIO overseeing digital transformation, Snowflake’s fully managed platform supports rapid innovation—helping Aviva stay competitive while streamlining operations and accelerating AI-driven customer experiences.",
+    "key_quotes": "[ '“Capgemini’s 2025 property and casualty insurance trends report indicates insurers are prioritising broker and agent engagement by making substantial investments in digital tools...”' , '“Despite 93% of P&C insurers... 51% acknowledge that their digitization efforts remain average or below average.”']"
+  },
+  {
+    "person_id": 14,
+    "company_name": "Aviva",
+    "person_name": "John Cummings",
+    "role_title": "Chief Information Officer, Aviva",
+    "artefact_url": "https://www.insurancebusinessmag.com/uk/news/reinsurance/deepseeks-ai-launch-highlights-reinsurers-need-for-transparent-models--rga-523125.aspx",
+    "relevance_summary": "As Aviva’s CIO, John leads digital transformation and efficiency initiatives. The article emphasizes how open source AI can be deployed securely on-premises or in private clouds, enhancing compliance and data security—key priorities for Aviva’s enterprise IT strategy. Sharing these points illustrates how flexible AI models can integrate with Aviva’s existing cloud and data tools to enhance risk assessment, underwriting, and customer experience while maintaining strict regulatory standards.",
+    "snowflake_angle": "Snowflake can serve as a secure, unified data platform that supports the integration of open source AI models within Aviva’s architecture. By leveraging Snowflake’s AI Data Cloud, John can ensure compliance (e.g., HIPAA, GDPR) when handling sensitive insurance data and scale generative AI projects more efficiently. This strengthens Aviva’s digital core and aligns with John’s mission to optimize IT performance and cost management.",
+    "key_quotes": "['“Open source models…provide access to trained weights, enabling insurers to deploy and customize models within their own infrastructure.”' , '“RGA said that this flexibility improves compliance with regulatory frameworks governing data privacy and risk assessment in insurance.”']"
+  },
+  {
+    "person_id": 14,
+    "company_name": "Aviva",
+    "person_name": "John Cummings",
+    "role_title": "Chief Information Officer, Aviva",
+    "artefact_url": "https://insurtechdigital.com/articles/munich-re-digital-health-records-cut-insurance-risk-by-35",
+    "relevance_summary": "This article illustrates how integrating electronic health data can transform underwriting efficiency and results—an ideal conversation starter with John, given his focus on digital innovation and cost synergies at Aviva. It supports Aviva’s push to put technology at the core, improving customer experiences and process automation. You can highlight how real-time data integration streamlines the underwriting process and reduces manual reviews, aligning with his strategic priority of top-quartile efficiency. Emphasize that these findings from Munich Re demonstrate the tangible value of harnessing unified data sources to deliver quick, cost-effective decisions—with the potential to further Aviva’s goal of providing affordable, digitally led insurance solutions.",
+    "snowflake_angle": "When speaking with John, underscore how Snowflake’s AI Data Cloud can unify multiple data sources (including EHRs) for advanced analytics, improving risk assessment and underwriting speed. This aligns with his priorities around technology-powered efficiency and delivering seamless customer journeys.",
+    "key_quotes": "['“The study found that EHR integration delivered net savings of US$916 per policy after costs.”', '“The proportion of cases receiving immediate risk assessment decisions increased from 68% to 79% when using EHRs.”', '“This improvement in automatic decision making reduces the number of applications requiring manual review by underwriters.”']"
+  },
+  {
+    "person_id": 15,
+    "company_name": "Aviva",
+    "person_name": "Mark Versey",
+    "role_title": "CEO of Aviva Investors, Aviva",
+    "artefact_url": "https://www.insurtechinsights.com/what-people-first-looks-like-post-ai-in-2025-and-beyond/",
+    "relevance_summary": "Mark, this article is highly relevant for Aviva Investors, as it discusses the rapid inroads AI is making in financial services. It highlights how a forward-looking approach to AI in investment and risk management can boost productivity while preserving core human skills such as empathy and negotiation. Positioning this piece in your discussions demonstrates awareness of how AI can expand growth opportunities for Aviva Investors, align with M&A initiatives, and innovate around pension savers, all while reinforcing the critical people-first elements of your culture.",
+    "snowflake_angle": "Snowflake’s AI Data Cloud for Financial Services accelerates data-driven insights for asset management. By unifying portfolio, third-party, and market data in a secure environment, your teams can more accurately assess risk, engage in data-intensive M&A, and drive new investment strategies. The AI-driven capabilities directly support Aviva Investors’ mission to grow responsibly, ensuring a people-first lens while optimizing portfolio performance and capitalizing on emerging digital opportunities.",
+    "key_quotes": "[ '“By becoming an early adopter, you are giving your organisation time and space to adapt your business model...”' , '“Employers need to be honest…AI is going to change everything from an employment point of view.”', '“It has the potential to have more of an impact in a shorter time frame than the industrial revolution...”']"
+  }
 ]
