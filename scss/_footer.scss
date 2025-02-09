@@ -1,0 +1,16 @@
+.page-footer {
+    @include minion();
+    align-items: center;
+    background-color: var(--color-slate);
+    border-top: 1px solid $border-color;
+    color: var(--color-slate-80);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2*$unit;
+    padding-block: 0.5*$unit;
+    padding-inline: $unit;
+
+    > .is-logo {
+        height: 24px;
+    }
+}

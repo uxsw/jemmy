@@ -1,0 +1,156 @@
+.companies-list {
+    display: flex;
+    flex-direction: column;
+    gap: $unit;
+    padding-inline: 0.5*$unit;
+
+    @media screen and (min-width: 900px) {
+        margin: 0 auto;
+        max-width: 900px;
+        padding-inline: $unit;
+    }
+
+    &__company {
+        > .is-name {
+            @include long-primer();
+            color: var(--color-gold);
+            margin-bottom: 0.5*$unit;
+            margin-left: 0.25*$unit;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        gap: 0.5*$unit;
+
+        > .is-item {
+            @include brevier();
+
+            background-color: var(--color-slate-20);
+            border-radius: $border-radius;
+            color: var(--color-slate-80);
+            padding-block: 0.25*$unit;
+            padding-inline: 0.5*$unit;
+            transition: all $transition-time;
+
+            &:hover {
+                background-color: var(--color-slate-30);
+                color: var(--color-slate-90);
+            }
+        }
+    }
+}
+
+.roles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5*$unit;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    width: 800px;
+
+    &__role {
+        align-items: center;
+        background-color: var(--color-slate);
+        border: 1px solid var(--color-slate-20);
+        border-radius: $border-radius;
+        color: var(--color-slate-90);
+        cursor: pointer;
+        display: grid;
+        gap: 0.5*$unit;
+        grid-template-areas: 'icon name-role article-count flags' ;
+        grid-template-columns: min-content auto max-content min-content;
+        padding-inline: 0.5*$unit;
+        padding-block: 0.25*$unit;
+        transition: all $transition-time;
+
+        @media screen and (min-width: 768px) {
+            gap: $unit;
+            padding-inline: $unit;
+            padding-block: 0.5*$unit;
+        }
+
+        &:hover {
+            background-color: var(--color-slate-10);
+            border-color: var(--color-slate-80);
+        }
+
+        > .is-leading-icon {
+            color: var(--color-slated-50);
+            font-size: 32px;
+            grid-area: icon;
+
+            @media screen and (min-width: 768px) {
+                font-size: 40px;
+            }
+        }
+        > .is-name-role {
+            grid-area: name-role;
+
+            > .is-name {
+                @include long-primer();
+                color: var(--color-slate-90);
+            }
+
+            > .is-role {
+                @include primer();
+                color: var(--color-slate-80);
+                margin-bottom: 0;
+            }
+
+        }
+        > .is-article-count {
+            @include brevier();
+
+            align-items: center;
+            background-color: transparent;
+            border: 1px solid var(--color-gold);
+            border-radius: $border-radius--roundel;
+            color: var(--color-gold);
+            display: flex;
+            grid-area: article-count;
+            height: 32px;
+            justify-content: center;
+            text-align: center;
+            transition: background-color $transition-time;
+            width: 32px;
+            > span {
+                font-size: 18px;
+            }
+
+            @media screen and (min-width: 768px) {
+                height: 40px;
+                width: 40px;
+
+                > span {
+                    font-size: 24px;
+                }
+            }
+
+            @at-root {
+                .roles-list__role:hover .is-article-count {
+                    background-color: var(--color-gold);
+                    color: var(--color-gold-darkest);
+                }
+            }
+        }
+        > .is-flags {
+            display: flex;
+            gap: 0.5*$unit;
+            grid-area: flags;
+            margin-left: auto;
+
+            > .is-flag {
+                align-items: center;
+                background-color: var(--color-slated-20);
+                border-radius: $border-radius;
+                display: flex;
+                color: var(--color-slated-50);
+                height: 2*$unit;
+                padding-inline: 0.5*$unit;
+            }
+        }
+    }
+}

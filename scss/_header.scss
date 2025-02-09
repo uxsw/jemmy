@@ -1,0 +1,31 @@
+.c-site-header {
+    align-items: center;
+    background-color: var(--color-slate);
+    color: var(--color-slated-80);
+    display: flex;
+    justify-content: space-between;
+    padding-block: 0.5*$unit;
+    padding-inline: 0.5*$unit;
+    z-index: 9;
+
+    @media screen and (min-width: 768px) {
+        padding-inline: $unit;
+    }
+
+    &__logo {
+        height: 28px;
+
+        @media screen and (min-width: 768px) {
+            height: 44px;
+        }
+    }
+
+    &__tag {
+        @include minion();
+        color: var(--color-slated-50);
+
+        @media screen and (min-width: 768px) {
+            @include brevier();
+        }
+    }
+}
