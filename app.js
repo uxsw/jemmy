@@ -33,8 +33,6 @@ async function showModal(personId) {
 
         // Insert this info above the results
         let html = personInfoHTML + filteredResults.map(item => {
-            const quotesArray = JSON.parse(item.key_quotes.replace(/'/g, '"'));
-            const quotesList = quotesArray.map(quote => `<li>${quote}</li>`).join('');
 
             return `
             <div class="article-card">
@@ -42,34 +40,42 @@ async function showModal(personId) {
                     <h2 class="article-card__title">${item.title}</h2>
                 </div>
                 <div class="article-card__main">
-                    <div class="article-card__summary">
-                        <p class="relevance-summary">${item.relevance_summary}</p>
-                    </div>
-                    <div class="article-card__angle">
-                        <h4 class="angle-title">
-                            <span class="material-icons is-icon">tips_and_updates</span>
-                            Suggested angle
-                        </h4>
-                        <p>${item.snowflake_angle}</p>
-                    </div>    
-                    <div class="article-card__cta">
-                        <a href="${item.artefact_url}" target="_blank" class="is-button">
+                    <div class="is-b1 overview__article">
+                        <p class="primer is-summary">${item.article_summary}</p>
+                        <div class="is-attention">
+                            <h4 class="icon-title">
+                            <span class="material-icons is-icon">campaign</span>
+                            Attention grabber
+                            </h4>
+                            <p class="long-primer">${item.attention_grabber}</p>
+                        </div>
+                        <a href="${item.artefact_url}" target="_blank" class="btn-view-source">
                             View source
                             <span class="material-icons">launch</span>
                         </a>
-                        <a href="javascript:void(0);" class="copy-to-clipboard">
-                            <span class="material-icons is-icon">file_copy</span>
-                            Copy to clipboard
-                        </a>
                     </div>
-                    <div class="article-card__quote">
-                        <h4 class="quote-title">
-                            <span class="material-icons is-icon">chat</span>
-                            Key quotes
-                        </h4>
-                        <ul class="key-quotes">${quotesList}</ul>
+                    <div class="overview__aside">
+                        <div class="is-b2 overview__relevance article-aside">
+                            <h4 class="icon-title">
+                            <span class="material-icons is-icon">tips_and_updates</span>
+                            Relevance
+                            </h4>
+                            <p class="relevance-summary">${item.relevance_summary}</p>
+                        </div>
+                        <div class="is-b3 article-aside">
+                            <h4 class="icon-title">
+                                <span class="material-icons is-icon">3p</span>
+                                Suggested angle
+                            </h4>
+                            <p>${item.snowflake_angle}</p>
+                            <a href="javascript:void(0);" class="copy-to-clipboard">
+                                <span class="material-icons is-icon">file_copy</span>
+                                Copy to clipboard
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </div> 
+               
                 <div class="article-card__footer">
                     <div class="rate-article">
                         <h4 class="is-legend">Rate this article</h4>
