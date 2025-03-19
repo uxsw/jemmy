@@ -49,16 +49,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 const buyers = (details["target buyers"] || []).map(buyer => `
                     <div class="buyer-card">
                         <div class="buyer-card__cv">
-                            <h4>${buyer.name}</h4>
-                            <p>${buyer.role}</p>
+                            <h4 class="long-primer kirk is-name">${buyer.name}</h4>
+                            <p class="brevier is-role">${buyer.role}</p>
                             <p class="is-org"> ${buyer.company}</p>
-                            <div>
-                                <h4 class="minion type-uppercase">Relevance indicator:</h4>
-                                <div>${getStarRating(buyer["relevance score"])}</div>
-                            </div>
-                            <ul class="buyer-card__connections-list"> ${getBuyerTags(buyer)}</ul>
-                            
                         </div>
+                        <div class="buyer-card__relevance">
+                            <h4 class="minion type-uppercase is-label">Relevance indicator:</h4>
+                            <div class="buyer-card__stars">${getStarRating(buyer["relevance score"])}</div>
+                        </div>
+                        <ul class="buyer-card__connections-list">
+                            ${getBuyerTags(buyer)}
+                        </ul>
                     </div>
                 `).join(" ");
                 
@@ -89,12 +90,16 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                     </section>
                     <section class="artifact-card__buyers">
-                        <h3>Most relevant clients</h3>
+                        <h3 class="is-title brevier type-uppercase">Most relevant clients</h3>
                         <div class="o-scroll-panel snaps-inline">
                             ${buyers}
                         </div>
                     </section>
                     <div class="artifact-card__footer">
+                        <button class="like-button">
+                            <span class="material-icons">bookmark_border</span>
+                            <span class="label">Save for later</span>
+                        </button>
                         <a href="" class="btn-engage">Engage client</a>
                     </div>
 
@@ -109,8 +114,8 @@ function getBuyerTags(buyer) {
     let topics = Object.keys(buyer["topics of interest"] || {});
     let industries = Object.keys(buyer["industry(s)"] || {});
 
-    let topicTags = topics.map(tag => `<li class="o-tag is-topic">#${tag}</li>`); // Add is-topic class
-    let industryTags = industries.map(tag => `<li class="o-tag is-industry">#${tag}</li>`); // Add is-industry class
+    let topicTags = topics.map(tag => `<li class="o-tag is-topic">${tag}</li>`); // Add is-topic class
+    let industryTags = industries.map(tag => `<li class="o-tag is-industry">${tag}</li>`); // Add is-industry class
 
     return [...topicTags, ...industryTags].join(" "); // Combine and return formatted tags
 }
