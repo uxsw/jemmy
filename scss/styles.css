@@ -179,11 +179,12 @@ p > a:not(.c-button):hover {
 
 .artifact-card {
   background-color: var(--color-slate);
-  border: 1px solid var(--color-slated-20);
-  border-radius: 4px;
+  border: 1px solid var(--color-slated-30);
+  border-radius: 8px;
   display: grid;
   grid-template-areas: "header" "source" "buyer" "footer";
   max-width: 900px;
+  overflow: hidden;
 }
 @media screen and (min-width: 1500px) {
   .artifact-card {
@@ -198,6 +199,7 @@ p > a:not(.c-button):hover {
   line-height: 1.5;
   text-wrap: pretty;
   background-color: hsl(200, 100%, 10%);
+  border-bottom: 1px solid var(--color-slated-30);
   display: flex;
   flex-direction: column-reverse;
   gap: 0.5rem;
@@ -289,17 +291,48 @@ p > a:not(.c-button):hover {
   color: var(--color-gold-darkest);
   display: flex;
   height: 40px;
+  flex-shrink: 0;
   justify-content: center;
   width: 40px;
 }
+.industry-type {
+  /*
+                          hsl(0, 69%, 73%) and hsl(81, 68%, 73%)
+                          Soft Coral Red	hsl(10, 70%, 72%)	Slightly warmer than your red-pink
+  Warm Peach	hsl(20, 65%, 75%)	A soft peach tone
+  Sunlit Orange	hsl(30, 68%, 72%)	Adds a warm accent
+  Golden Yellow	hsl(45, 70%, 73%)	Smooth transition from warm tones
+  Soft Lime Green	hsl(65, 65%, 75%)	Bridges the warm and cool colors
+  Teal Green	hsl(160, 60%, 70%)	A cool counterpart to balance the warm tones
+  Sky Blue	hsl(200, 65%, 72%)	Light and airy contrast
+  Soft Lavender	hsl(260, 55%, 75%)	Gentle purple for variety
+  Dusty Rose	hsl(320, 50%, 70%)	A muted pink complement
+  Rich Burgundy	hsl(340, 65%, 50%)	A deeper accent for contrast
+  */
+}
+.industry-type.type1 {
+  color: hsl(10, 70%, 72%);
+}
 .industry-type.type1 > .is-icon {
+  background-color: hsl(10, 70%, 72%);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' %3E%3Cpath d='M160-120q-33 0-56.5-23.5T80-200v-640l67 67 66-67 67 67 67-67 66 67 67-67 67 67 66-67 67 67 67-67 66 67 67-67v640q0 33-23.5 56.5T800-120H160Zm0-80h280v-240H160v240Zm360 0h280v-80H520v80Zm0-160h280v-80H520v80ZM160-520h640v-120H160v120Z'/%3E%3C/svg%3E");
+  color: hsl(10, 70%, 10%);
+}
+.industry-type.type2 {
+  color: hsl(20, 65%, 75%);
 }
 .industry-type.type2 > .is-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' %3E%3Cpath d='M160-120q-33 0-56.5-23.5T80-200v-560q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v560q0 33-23.5 56.5T800-120H160Zm80-160h200v-80H240v80Zm0-160h200v-80H240v80Zm0-160h200v-80H240v80Zm400 320h80v-80h-80v80Zm0-160h80v-240h-80v240Z'/%3E%3C/svg%3E");
+  background-color: hsl(20, 65%, 75%);
+  color: hsl(20, 65%, 10%);
+}
+.industry-type.type3 {
+  color: hsl(30, 68%, 72%);
 }
 .industry-type.type3 > .is-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' %3E%3Cpath d='M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-120q25 0 42.5-17.5T540-260H420q0 25 17.5 42.5T480-200ZM360-300h240v-60H360v60Zm1-100h238q37-27 59-68.5t22-91.5q0-83-58.5-141.5T480-760q-83 0-141.5 58.5T280-560q0 50 22 91.5t59 68.5Zm22-60q-20-20-31.5-45.5T340-560q0-58 41-99t99-41q58 0 99 41t41 99q0 29-11.5 54.5T577-460H383Z'/%3E%3C/svg%3E");
+  background-color: hsl(30, 68%, 72%);
+  color: hsl(30, 68%, 10%);
 }
 
 .artifact-card__summary {
@@ -331,13 +364,56 @@ p > a:not(.c-button):hover {
     padding-block-start: 2rem;
   }
 }
+.artifact-card__buyers > .is-title {
+  color: var(--color-slate-70);
+  margin-left: 0.5rem;
+}
+@media screen and (min-width: 600px) {
+  .artifact-card__buyers > .is-title {
+    margin-inline-start: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .artifact-card__buyers > .is-title {
+    margin-inline-start: 2rem;
+  }
+}
 .artifact-card__footer {
   align-items: center;
+  border-top: 1px solid var(--color-slated-30);
   display: flex;
   grid-area: footer;
-  justify-content: flex-end;
-  padding-block-end: 1rem;
+  justify-content: space-between;
+  padding-block: 1rem;
   padding-inline: 1rem;
+}
+
+.like-button {
+  font-size: var(--brevier);
+  font-weight: normal;
+  line-height: 1.5;
+  text-wrap: pretty;
+  align-items: center;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: var(--color-gold-darker);
+  cursor: pointer;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  outline: none;
+  padding-inline-end: 0.5rem;
+  padding-inline-start: 0.25rem;
+  transition: all 0.4s ease;
+  width: -moz-max-content;
+  width: max-content;
+}
+.like-button:hover {
+  background-color: var(--color-slate-20);
+}
+.like-button.liked > .is-icon {
+  color: var(--color-gold);
 }
 
 .buyer-card {
@@ -348,6 +424,23 @@ p > a:not(.c-button):hover {
   flex-shrink: 0;
   inline-size: 300px;
   padding: 0.5rem;
+  /*&__score {
+      @include minion();
+
+      background-color: var(--color-slated-50);
+      border: 1px solid var(--color-slated-50);
+      border-radius: $border-radius;
+      color: var(--color-slate-10);
+      display: flex;
+      justify-content: space-between;
+      letter-spacing: 0.02em;
+      padding-inline: 0.5*$unit;
+      text-transform: uppercase;
+  }*/
+}
+.buyer-card__cv {
+  color: var(--color-slate-80);
+  margin-block-end: 0.5rem;
 }
 .buyer-card__cv > * {
   margin-bottom: 0;
@@ -355,26 +448,21 @@ p > a:not(.c-button):hover {
 .buyer-card__cv > .is-org {
   color: var(--color-gold-darker);
 }
-.buyer-card__cv > .is-org::before {
-  background-color: tomato;
+.buyer-card__relevance::before {
+  background-color: hsl(20, 99%, 46%);
   content: "";
   display: block;
   height: 2px;
+  margin-block-end: 0.5rem;
+  margin-block-start: 0.25rem;
   width: 2rem;
 }
-.buyer-card__score {
-  font-size: var(--minion);
-  font-weight: normal;
-  line-height: 1.4;
-  background-color: var(--color-slated-50);
-  border: 1px solid var(--color-slated-50);
-  border-radius: 4px;
-  color: var(--color-slate-10);
-  display: flex;
-  justify-content: space-between;
-  letter-spacing: 0.02em;
-  padding-inline: 0.5rem;
-  text-transform: uppercase;
+.buyer-card__relevance > .is-label {
+  color: var(--color-slate-50);
+  letter-spacing: 0.075em;
+}
+.buyer-card__stars {
+  color: var(--color-gold-darker);
 }
 .buyer-card__connections-list {
   font-size: var(--minion);
@@ -382,7 +470,6 @@ p > a:not(.c-button):hover {
   line-height: 1.4;
   color: var(--color-slate-70);
   display: flex;
-  gap: 0.5rem;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
@@ -390,7 +477,6 @@ p > a:not(.c-button):hover {
 .buyer-card__connections-list > li {
   align-items: center;
   display: flex;
-  gap: 0.5rem;
 }
 
 .o-scroll-panel {
@@ -400,29 +486,62 @@ p > a:not(.c-button):hover {
   overscroll-behavior-inline: contain;
   padding-block-end: 0.5rem;
 }
+.o-scroll-panel > :nth-child(1) {
+  margin-left: 0.5rem;
+}
+@media screen and (min-width: 600px) {
+  .o-scroll-panel > :nth-child(1) {
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .o-scroll-panel > :nth-child(1) {
+    margin-left: 2rem;
+  }
+}
+.o-scroll-panel > *:nth-last-child(1) {
+  margin-right: 0.5rem;
+}
+@media screen and (min-width: 600px) {
+  .o-scroll-panel > *:nth-last-child(1) {
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .o-scroll-panel > *:nth-last-child(1) {
+    margin-right: 2rem;
+  }
+}
 
 .o-tag {
-  font-size: var(--minion);
+  font-size: var(--brevier);
   font-weight: normal;
-  line-height: 1.4;
-  border: 1px solid var(--color-slate-70);
-  border-radius: 4px;
-  color: var(--color-slate-70);
+  line-height: 1.5;
+  text-wrap: pretty;
+  align-items: center;
+  color: var(--color-slated-50);
   display: flex;
-  padding-block: 0.1rem;
+  gap: 0.15rem;
   padding-inline: 0.25rem;
   width: -moz-max-content;
   width: max-content;
 }
-.o-tag.is-topic {
-  border: 1px solid var(--color-slated-30);
-  background-color: var(--color-slated-30);
-  color: var(--color-slate-80);
+.o-tag:before {
+  content: "#";
 }
-.o-tag.is-industry {
-  border: 1px solid hsl(43, 100%, 20%);
-  background-color: hsl(43, 100%, 20%);
-  color: hsl(43, 100%, 90%);
+.o-tag.is-topic::before, .o-tag.is-industry::before {
+  color: var(--color-slated-50);
+}
+.o-tag.is-region {
+  border: 1px solid var(--color-slate-70);
+  border-radius: 4px;
+  color: var(--color-slate-70);
+  gap: 0;
+  padding-block: 0.1rem;
+  padding-inline: 0.25rem;
+}
+.o-tag.is-region::before {
+  content: "";
 }
 
 .btn-outline {
@@ -435,6 +554,8 @@ p > a:not(.c-button):hover {
   display: flex;
   height: 2rem;
   padding-inline: 0.5rem;
+  min-width: -moz-max-content;
+  min-width: max-content;
   transition: all 0.4s ease-in-out;
 }
 .btn-outline:hover {
