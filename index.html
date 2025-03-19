@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Jemmy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+
+    <link href="scss/styles.css" title="site-styles" rel="stylesheet">
+
+
+    <meta name="viewport" content="initial-scale=1">
+    
+    <!-- open graph common -->
+    <meta property="og:site_name" content="Jemmy | Enabling dialogues that connect">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content=" INSERT "> 
+
+    <style type="text/css">
+
+    :root {
+      --canon: clamp(3.125rem, 2.2223rem + 4.5135vw, 7.3rem);
+      --paragon: clamp(2rem, -0.0893rem + 9.2857vw, 6.875rem);
+      --pica: clamp(1.28rem, 0.8rem + 2.1333vw, 2.4rem);
+      --long-primer: clamp(1.2rem, 1.1429rem + 0.4762vw, 1.3rem);
+      --primer: 1rem;
+      --brevier: 0.85rem;
+      --minion: 0.75rem;
+
+      --color-slate: hsl(200, 100%, 5%);
+      --color-slate-10: hsl(200, 100%, 10%);
+      --color-slate-20: hsl(200, 100%, 20%);
+      --color-slate-30: hsl(200, 100%, 35%);
+      --color-slate-40: hsl(200, 100%, 45%);
+      --color-slate-50: hsl(200, 100%, 55%);
+      --color-slate-60: hsl(200, 100%, 65%);
+      --color-slate-70: hsl(200, 100%, 75%);
+      --color-slate-80: hsl(200, 100%, 85%);
+      --color-slate-90: hsl(200, 100%, 95%);
+
+      --color-slated: hsl(200, 50%, 5%);
+      --color-slated-10: hsl(200, 50%, 10%);
+      --color-slated-20: hsl(200, 50%, 15%);
+      --color-slated-30: hsl(200, 50%, 35%);
+      --color-slated-40: hsl(200, 50%, 45%);
+      --color-slated-50: hsl(200, 50%, 55%);
+      --color-slated-60: hsl(200, 50%, 65%);
+      --color-slated-70: hsl(200, 50%, 75%);
+      --color-slated-80: hsl(200, 50%, 85%);
+      --color-slated-90: hsl(200, 50%, 95%);
+
+      --color-gold: hsl(43, 100%, 50%);
+      --color-gold-darker: hsl(43, 100%, 40%);
+      --color-gold-darkest: hsl(43, 100%, 10%);
+    }
+    </style>
+</head>
+<body>
+    <header class="c-site-header">
+        <a href="/">
+            <img src="assets/jemmy-logo.svg" alt="Jemmy" height="44" class="c-site-header__logo" />
+        </a>
+        <div class="c-site-header__tag">Dialogs that connect</div>
+    </header>
+
+    <div class="jemmy-feed" id="jsonDataContainer">
+        
+    </div>
+    <script src="jfeed.js"></script>
+    
+    <script>
+      document.addEventListener("click", function (event) {
+    const button = event.target.closest(".like-button");
+    
+    if (button) {
+        const icon = button.querySelector(".material-icons");
+        const label = button.querySelector(".label");
+
+        // Toggle between filled and outlined bookmark
+        const isLiked = icon.innerText === "bookmark";
+        icon.innerText = isLiked ? "bookmark_border" : "bookmark";
+
+        // Toggle color effect
+        button.classList.toggle("liked", !isLiked);
+
+        // Toggle label text
+        if (label) {
+            label.innerText = isLiked ? "Save for later" : "Saved for later";
+        }
+    }
+});
+
+  </script>
+</body>
+</html>
 
