@@ -1,0 +1,528 @@
+.jemmy-feed {
+    display: grid;
+    gap: 0.5*$unit;
+    grid-template-columns: 1fr;
+    margin-inline: auto;
+    max-width: 100%;
+    padding-block: 0.5*$unit;
+    padding-inline: 0.5*$unit;
+
+    @media screen and (min-width: 768px) {
+        gap: $unit;
+        padding-block: $unit;
+        padding-inline: $unit;
+    }
+}
+
+.artifact-card {
+    background-color: var(--color-slate);
+    border: 1px solid var(--color-slated-30);
+    border-radius: $border-radius--large;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'source'
+        'buyer'
+        'footer';
+    max-width: 900px;
+    overflow: hidden;
+
+    @media screen and (min-width: 1500px) {
+        grid-template-areas:
+            'header header'
+            'source buyer'
+            'footer footer';
+        grid-template-columns: 4fr 3fr;
+        max-width: 2000px;
+    }
+
+    &__head {
+        @include brevier;
+
+        background-color: hsl(200, 100%, 10%);
+        border-bottom: 1px solid var(--color-slated-30);
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.5*$unit;
+        grid-area: header;
+        padding: 0.5*$unit;
+
+        @media screen and (min-width: 600px) {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-block-end: 0.5*$unit;
+            padding-block-start: $unit;
+            padding-inline: $unit;
+        }
+    }
+
+    &__connections-summary {
+        color: var(--color-slate-70);
+
+        > * { margin-bottom: 0; }
+    }
+
+    &__connections-list {
+
+        @include primer();
+        color: var(--color-gold-darker);
+
+        display: flex;
+        font-weight: bold;
+        gap: 0.5*$unit;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__usp {
+        color: var(--color-slate-70);
+
+        &::after {
+            background-color: hsl(111, 50%, 60%);
+            content: '';
+            display: block;
+            height: 2px;
+            width: 2*$unit;
+
+            @media screen and (min-width: 600px) {
+                content: initial;
+            }
+        }
+    }
+
+    &__source {
+        grid-area: source;
+        padding: 0.5*$unit;
+
+        @media screen and (min-width: 600px) {
+            padding-block-start: $unit;
+            padding-inline: $unit;
+        }
+
+        @media screen and (min-width: 1024px) {
+            padding-block-start: 2*$unit;
+            padding-inline: 2*$unit;
+        }
+    }
+
+    &__source-head {
+        display: flex;
+        gap: 2*$unit;
+        justify-content: space-between;
+        padding-block: 0.5*$unit;
+
+        > .industry-type {
+            @include minion();
+
+            align-items: center;
+            color: var(--color-gold-darker);
+            display: flex;
+            gap: 0.5*$unit;
+            text-transform: uppercase;
+
+            > .is-icon {
+                align-items: center;
+                background-color: var(--color-gold-darker);
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' %3E%3Cpath d='M160-120q-33 0-56.5-23.5T80-200v-640l67 67 66-67 67 67 67-67 66 67 67-67 67 67 66-67 67 67 67-67 66 67 67-67v640q0 33-23.5 56.5T800-120H160Zm0-80h280v-240H160v240Zm360 0h280v-80H520v80Zm0-160h280v-80H520v80ZM160-520h640v-120H160v120Z'/%3E%3C/svg%3E");
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: $border-radius--roundel;
+                content: '';
+                color: var(--color-gold-darkest);
+                display: flex;
+                height: 40px;
+                flex-shrink: 0;
+                justify-content: center;
+                width: 40px;
+
+                @at-root {
+                    .industry-type {
+                        &.type1 {
+                            color: hsl(10, 70%, 72%);
+                            > .is-icon {
+                                background-color: hsl(10, 70%, 72%);
+                                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' %3E%3Cpath d='M160-120q-33 0-56.5-23.5T80-200v-640l67 67 66-67 67 67 67-67 66 67 67-67 67 67 66-67 67 67 67-67 66 67 67-67v640q0 33-23.5 56.5T800-120H160Zm0-80h280v-240H160v240Zm360 0h280v-80H520v80Zm0-160h280v-80H520v80ZM160-520h640v-120H160v120Z'/%3E%3C/svg%3E");
+                                color: hsl(10, 70%, 10%);
+                            }
+                        }
+                        &.type2 {
+                            color: hsl(20, 65%, 75%);
+                            > .is-icon {
+                                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' %3E%3Cpath d='M160-120q-33 0-56.5-23.5T80-200v-560q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v560q0 33-23.5 56.5T800-120H160Zm80-160h200v-80H240v80Zm0-160h200v-80H240v80Zm0-160h200v-80H240v80Zm400 320h80v-80h-80v80Zm0-160h80v-240h-80v240Z'/%3E%3C/svg%3E");
+                                background-color: hsl(20, 65%, 75%);;
+                                color: hsl(20, 65%, 10%);
+
+                            }
+                        }
+
+                        &.type3 {
+                            color: hsl(30, 68%, 72%);
+                            > .is-icon {
+                                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' %3E%3Cpath d='M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-120q25 0 42.5-17.5T540-260H420q0 25 17.5 42.5T480-200ZM360-300h240v-60H360v60Zm1-100h238q37-27 59-68.5t22-91.5q0-83-58.5-141.5T480-760q-83 0-141.5 58.5T280-560q0 50 22 91.5t59 68.5Zm22-60q-20-20-31.5-45.5T340-560q0-58 41-99t99-41q58 0 99 41t41 99q0 29-11.5 54.5T577-460H383Z'/%3E%3C/svg%3E");
+                                background-color: hsl(30, 68%, 72%);
+                                color: hsl(30, 68%, 10%);
+                            }
+                        }
+
+                        /*
+                        hsl(0, 69%, 73%) and hsl(81, 68%, 73%)
+                        Soft Coral Red	hsl(10, 70%, 72%)	Slightly warmer than your red-pink
+Warm Peach	hsl(20, 65%, 75%)	A soft peach tone
+Sunlit Orange	hsl(30, 68%, 72%)	Adds a warm accent
+Golden Yellow	hsl(45, 70%, 73%)	Smooth transition from warm tones
+Soft Lime Green	hsl(65, 65%, 75%)	Bridges the warm and cool colors
+Teal Green	hsl(160, 60%, 70%)	A cool counterpart to balance the warm tones
+Sky Blue	hsl(200, 65%, 72%)	Light and airy contrast
+Soft Lavender	hsl(260, 55%, 75%)	Gentle purple for variety
+Dusty Rose	hsl(320, 50%, 70%)	A muted pink complement
+Rich Burgundy	hsl(340, 65%, 50%)	A deeper accent for contrast
+*/
+                    }
+                }
+            }
+        }
+    }
+
+    &__summary {
+        @include primer();
+
+        color: var(--color-slate-80);
+
+        .is-title {
+            color: var(--color-slate-70);
+        }
+    }
+
+    &__tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5*$unit;
+    }
+
+    &__buyers {
+        grid-area: buyer;
+        overflow: hidden;
+        padding-block: $unit;
+
+        @media screen and (min-width: 600px) {
+            padding-block-start: $unit;
+        }
+
+        @media screen and (min-width: 1024px) {
+            padding-block-start: 2*$unit;
+        }
+
+        > .is-title {
+            color: var(--color-slate-70);
+            margin-left: 0.5*$unit;
+
+            @media screen and (min-width: 600px) {
+                margin-inline-start: $unit;
+            }
+
+            @media screen and (min-width: 1024px) {
+                margin-inline-start: 2*$unit;
+            }
+        }
+    }
+
+    &__footer {
+        align-items: center;
+        border-top: 1px solid var(--color-slated-30);
+        display: flex;
+        grid-area: footer;
+        justify-content: space-between;
+        padding-block: $unit;
+        padding-inline: $unit;
+    }
+}
+
+.like-button {
+    @include brevier();
+    align-items: center;
+    background: transparent;
+    border: none;
+    border-radius: $border-radius;
+    color: var(--color-gold-darker);
+    cursor: pointer;
+    display: flex;
+    height: 2*$unit;
+    justify-content: center;
+    outline: none;
+    padding-inline-end: 0.5*$unit;
+    padding-inline-start: 0.25*$unit;
+    transition: all $transition-time ease;
+    width: max-content;
+
+    &:hover {
+        background-color: var(--color-slate-20);
+    }
+
+    &.liked > .is-icon {
+        color: var(--color-gold);
+    }
+}
+
+.buyer-card {
+    background-color: hsl(200, 100%, 10%);
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    color: var(--color-slate-80);
+    flex-shrink: 0;
+    inline-size: 300px;
+    padding: 0.5*$unit;
+
+    &__cv {
+        color: var(--color-slate-80);
+        margin-block-end: 0.5*$unit;
+
+        > * {
+            margin-bottom: 0;
+        }
+
+        > .is-org {
+            color: var(--color-gold-darker);
+        }
+    }
+
+    &__relevance {
+        &::before {
+            background-color: hsl(20, 99%, 46%);
+            content: '';
+            display: block;
+            height: 2px;
+            margin-block-end: 0.5*$unit;
+            margin-block-start: 0.25*$unit;
+            width: 2*$unit;
+        }
+
+        > .is-label {
+            color: var(--color-slate-50);
+            letter-spacing: 0.075em;
+        }
+    }
+
+    &__stars {
+        color: var(--color-gold-darker);
+    }
+
+
+    /*&__score {
+        @include minion();
+
+        background-color: var(--color-slated-50);
+        border: 1px solid var(--color-slated-50);
+        border-radius: $border-radius;
+        color: var(--color-slate-10);
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 0.02em;
+        padding-inline: 0.5*$unit;
+        text-transform: uppercase;
+    }*/
+
+    &__connections-list {
+        @include minion();
+
+        color: var(--color-slate-70);
+        display: flex;
+        //gap: 0.5*$unit;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+
+        > li {
+            align-items: center;
+            display: flex;
+        }
+    }
+}
+
+.o-scroll-panel {
+    display: flex;
+    gap: 0.5*$unit;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding-block-end: 0.5*$unit;
+
+    > :nth-child(1) {
+        margin-left: 0.5*$unit;
+
+        @media screen and (min-width: 600px) {
+            margin-left: $unit;
+        }
+
+        @media screen and (min-width: 1024px) {
+            margin-left: 2*$unit;
+        }
+    }
+
+    > *:nth-last-child(1) {
+        margin-right: 0.5*$unit;
+
+        @media screen and (min-width: 600px) {
+            margin-right: $unit;
+        }
+
+        @media screen and (min-width: 1024px) {
+            margin-right: 2*$unit;
+        }
+    }
+}
+
+.o-tag {
+    @include brevier();
+
+    align-items: center;
+    //border: 1px solid var(--color-slate-70);
+    //border-radius: $border-radius;
+    color: var(--color-slated-50);
+    display: flex;
+    gap: 0.15rem;
+    //padding-block: 0.1*$unit;
+    padding-inline: 0.25*$unit;
+    width: max-content;
+
+    &:before {
+        content: '#';
+    }
+
+    &.is-topic::before,
+    &.is-industry::before {
+        color: var(--color-slated-50);
+    }
+
+    &.is-region {
+        border: 1px solid var(--color-slate-70);
+        border-radius: $border-radius;
+        color: var(--color-slate-70);
+        gap: 0;
+        padding-block: 0.1*$unit;
+        padding-inline: 0.25*$unit;
+
+        &::before {
+            content: '';
+        }
+    }
+}
+
+.btn-outline {
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid var(--color-slate-50);
+    border-radius: $border-radius--roundel;
+    color: var(--color-slate-50);
+    cursor: pointer;
+    display: flex;
+    height: 2*$unit;
+    padding-inline: 0.5*$unit;
+    min-width: max-content;
+    transition: all $transition-time ease-in-out;
+
+    &:hover {
+        background-color: var(--color-gold);
+        border-color: var(--color-gold);
+        color: var(--color-gold-darkest);
+    }
+}
+
+.btn-engage {
+    align-items: center;
+    background-color: var(--color-gold);
+    border-radius: $border-radius;
+    color: var(--color-gold-darkest);
+    cursor: pointer;
+    display: flex;
+    height: 2*$unit;
+    padding-inline: 0.5*$unit;
+    transition: all $transition-time ease-in-out;
+    width: max-content;
+
+    &:hover {
+        background-color: var(--color-slate-30);
+        color: var(--color-slate-90);
+    }
+}
+
+
+.media-scroller {
+  --_spacer: var(--size-3);
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+
+  padding: 0 var(--_spacer) var(--_spacer);
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.media-scroller--with-groups {
+  grid-auto-columns: 80%;
+}
+
+.media-group {
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+}
+
+.media-element {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer);
+  padding: var(--_spacer);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+}
+
+.media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+/* general styling */
+
+.container {
+  inline-size: min(100% - 4rem, 70rem);
+  margin-inline: auto;
+}
+
+.flow {
+  display: grid;
+  gap: var(--size-3);
+}
+
+.page-header {
+  padding-block: var(--size-9);
+  margin-block-end: var(--size-9);
+  background: var(--gradient-16);
+  color: var(--gray-0);
+  box-shadow: var(--shadow-2);
+}
+
+.page-title {
+  font-size: var(--font-size-fluid-3);
+}
+
+.page-subtitle {
+  font-size: var(--font-size-fluid-1);
+}
+
+.section-title {
+  padding-inline-start: var(--size-6);
+  margin-block: var(--size-9) var(--size-3);
+}
