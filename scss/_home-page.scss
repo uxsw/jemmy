@@ -1,0 +1,115 @@
+.c-home {
+    min-height: 100%;
+    margin-inline: auto;
+    max-width: 1800px;
+    @media screen and (min-width: 1000px) {
+        background-image: url(../assets/home-media-lrg.webp);
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 100%;
+    }
+
+    &__layout {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-inline: 2vw;
+
+        @media screen and (min-width: 1000px) {
+            justify-content: center;
+            margin-inline: 5vw;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-inline: 10vw;
+        }
+
+    }
+    &__main {
+        @media screen and (min-width: 768px) {
+            padding-inline-end: 10vw;
+        }
+
+        > .is-media {
+            @media screen and (min-width: 1000px) {
+                display: none;
+                visibility: hidden;
+            }
+        }
+    }
+
+    &__coming-soon {
+        > .is-label {
+            color: var(--color-slate-70);
+            margin-left: 0.25*$unit;
+
+            &:before {
+                background-color: tomato;
+                content: '';
+                display: block;
+                height: 4px;
+                margin-bottom: $unit;
+                width: 4*$unit;
+            }
+        }
+
+        > .is-more-info {
+            color: var(--color-gold-darker);
+            font-weight: normal;
+            margin-left: 0.25*$unit;
+        }
+
+        > .is-action {
+            @include long-primer();
+
+            align-items: center;
+            
+            background-color: var(--color-gold);
+                color: var(--color-gold-darkest);
+            border-radius: $border-radius--roundel;
+            cursor: pointer;
+            display: flex;
+            gap: 0.5*$unit;
+            font-weight: normal;
+            line-height: 1;
+            padding-block: $unit;
+            padding-inline: 1.5*$unit;
+            transition: all $transition-time ease;
+            width: max-content;
+
+            &:hover {
+                background-color: var(--color-slate-30);
+                color: var(--color-slate-90);
+            }
+        }
+    }
+
+    &__kicker {
+        @include long-primer();
+
+        color: var(--color-slate-50);
+
+        font-weight: normal;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+
+        > .has-underline {
+            display: inline-flex;
+            flex-direction: column;
+            width: max-content;
+
+            &:after {
+                background-color: var(--color-gold);
+                content: '';
+                height: 4px;
+                margin-top: -0.5rem;
+                width: 100%;
+            }
+        }
+    }
+
+    &__headline {
+        @include paragon();
+        color: var(--color-slate-80);
+    }
+}
