@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </header>
                     <section class="artifact-card__source">
                         <div class="artifact-card__source-head">
-                            <div class="industry-type ${details["artefact name"]}">
+                            <div class="industry-type ${details["artefact category"]}">
                                 <span class="material-icons is-icon"></span>
                                 ${details["artefact type"]}
                             </div>
